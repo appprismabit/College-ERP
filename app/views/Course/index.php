@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Couse Details</title>
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/fontawesome-free/css/all.min.css">
@@ -24,24 +23,16 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/summernote/summernote-bs4.min.css">
-
-
-
+    <!-- Toastr -->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/toastr/toastr.css">
+
+
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/select2/css/select2.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/custom/css/ol.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/loaders/loader-progress.css">
 
-    <style>
-        .accordion-button::after {
-            display: none;
-        }
 
-        .accordion-body {
-            background-color: #f7f7f7;
-        }
-    </style>
 
 
 
@@ -89,11 +80,12 @@
                 <section class="content">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-8">
                                 <div class="card">
 
                                     <div class="card-body">
                                         <div class="row">
+
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
                                                 <a href="<?php echo BASE_URL; ?>/sis/index" style="text-decoration: none; color: black;">
                                                     <div class="card shadow-lg text-center p-2">
@@ -153,6 +145,44 @@
                                 </div>
 
                             </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Regiter Faculty
+                                        </a>
+                                    </div>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card-body">
+                                            <div class="row form-group">
+                                                <div class="col-md-12 p-1">
+                                                    <input type="text" id="title_faculty" class="form-control" placeholder="Title of Faculty">
+                                                </div>
+                                                <div class="col-md-12 p-1">
+                                                    <select class="form-control" name="" id="">
+                                                        <option>----Select Department----</option>
+                                                        <option>Department 1</option>
+                                                        <option>Department 2</option>
+                                                        <option>Department 3</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-12 p-1">
+                                                    <input type="text" id="phone_faculty" class="form-control" placeholder="Phone Number">
+                                                </div>
+                                                <div class="col-md-12 p-1">
+                                                    <input type="text" id="email_faculty" class="form-control" placeholder="Email of Faculty">
+                                                </div>
+                                                <div class="col-md-12 p-1">
+                                                    <button type="button" name="" id="" class="btn btn-success btn-md btn-block"> Submit</button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div><!-- /.container-fluid -->
                 </section>
@@ -165,21 +195,16 @@
         <!-- ./wrapper -->
 
         <!-- jQuery -->
-        <script src="<?php echo BASE_URL; ?>/plugins/custom/custom.js"></script>
+        <script>
+            $.widget.bridge('uibutton', $.ui.button)
+        </script>
         <script src="<?php echo BASE_URL; ?>/plugins/jquery/jquery.min.js"></script>
         <script src="<?php echo BASE_URL; ?>/plugins/jquery-ui/jquery-ui.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.js"></script>
-        <!-- Bootstrap 4 -->
-        <script src="<?php echo BASE_URL; ?>/plugins/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
         <!-- ChartJS -->
         <script src="<?php echo BASE_URL; ?>/plugins/chart.js/Chart.min.js"></script>
         <!-- Sparkline -->
         <script src="<?php echo BASE_URL; ?>/plugins/sparklines/sparkline.js"></script>
-        <!-- JQVMap -->
-        <script src="<?php echo BASE_URL; ?>/plugins/jqvmap/jquery.vmap.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-        <!-- jQuery Knob Chart -->
-        <script src="<?php echo BASE_URL; ?>/plugins/jquery-knob/jquery.knob.min.js"></script>
         <!-- daterangepicker -->
         <script src="<?php echo BASE_URL; ?>/plugins/moment/moment.min.js"></script>
         <script src="<?php echo BASE_URL; ?>/plugins/daterangepicker/daterangepicker.js"></script>
@@ -192,11 +217,10 @@
         <!-- AdminLTE App -->
         <script src="<?php echo BASE_URL; ?>/dist/js/adminlte.js"></script>
         <script src="<?php echo BASE_URL; ?>/dist/js/pages/dashboard.js"></script>
-
         <script src="<?php echo BASE_URL; ?>/plugins/select2/js/select2.full.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/chart.js/Chart.min.js"></script>
         <script src="<?php echo BASE_URL; ?>/plugins/loaders/init.js"></script>
+        <script src="<?php echo BASE_URL; ?>/plugins/custom/custom.js"></script>
+        <script src="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.js"></script>
 
 
 </body>
