@@ -60,68 +60,71 @@
                 <!-- Content Header (Page header) -->
                 <div class="content-header">
                     <div class="container-fluid">
-                        <div class="row mb-2">
-                            <div class="col-sm-6">
-                                <h1 class="m-0"> Welcome</h1>
-                            </div><!-- /.col -->
-                            <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
 
-                                <ol class="breadcrumb float-sm-right">
-                                    <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>/dashboard/index">Home</a></li>
-                                    <li class="breadcrumb-item active">Dashboard</li>
-                                </ol>
-                            </div><!-- /.col -->
+                                    <div class="col-sm-6">
+                                        <h1 class="m-0"> Welcome</h1>
+                                    </div><!-- /.col -->
+                                    <div class="col-sm-6">
 
-                        </div><!-- /.row -->
-                    </div><!-- /.container-fluid -->
+                                        <ol class="breadcrumb float-sm-right">
+                                            <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>/dashboard/index">Home</a></li>
+                                            <li class="breadcrumb-item active">Dashboard</li>
+                                        </ol>
+                                    </div><!-- /.col -->
+                                </div>
+
+
+
+                            </div><!-- /.row -->
+                        </div><!-- /.container-fluid -->
+                    </div>
+
+                    <!-- Main content -->
+                    <section class="content">
+                        <div class="container-fluid">
+                            <!-- Small boxes (Stat box) -->
+                            <?php include 'dashboard-admin.php'; ?>
+
+                        </div><!-- /.container-fluid -->
+                    </section>
+                    <!-- /.content -->
                 </div>
-                <!-- /.content-header -->
-                <hr>
-                <!-- Main content -->
-                <section class="content">
-                    <div class="container-fluid">
-                        <!-- Small boxes (Stat box) -->
-                        <?php include 'dashboard-admin.php'; ?>
+                <!-- /.content-wrapper -->
+               
 
-                    </div><!-- /.container-fluid -->
-                </section>
-                <!-- /.content -->
             </div>
-            <!-- /.content-wrapper -->
             <?php include BASE_PATH . '/layout/footer.php'; ?>
-
         </div>
-        <!-- ./wrapper -->
+    </div>
+    <!-- ./wrapper -->
 
-        <!-- jQuery -->
-        <!-- Bootstrap 4 -->
-        <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- ChartJS -->
-        <script src="<?php echo BASE_URL; ?>/plugins/chart.js/Chart.min.js"></script>
-        <!-- Sparkline -->
-        <script src="<?php echo BASE_URL; ?>/plugins/sparklines/sparkline.js"></script>
-        <!-- JQVMap -->
-        <script src="<?php echo BASE_URL; ?>/plugins/jqvmap/jquery.vmap.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-        <!-- jQuery Knob Chart -->
-        <script src="<?php echo BASE_URL; ?>/plugins/jquery-knob/jquery.knob.min.js"></script>
-        <!-- daterangepicker -->
-        <script src="<?php echo BASE_URL; ?>/plugins/moment/moment.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/daterangepicker/daterangepicker.js"></script>
-        <!-- Tempusdominus Bootstrap 4 -->
-        <script src="<?php echo BASE_URL; ?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-        <!-- Summernote -->
-        <script src="<?php echo BASE_URL; ?>/plugins/summernote/summernote-bs4.min.js"></script>
-        <!-- overlayScrollbars -->
-        <script src="<?php echo BASE_URL; ?>/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-        <!-- AdminLTE App -->
-        <script src="<?php echo BASE_URL; ?>/dist/js/adminlte.js"></script>
-        <script src="<?php echo BASE_URL; ?>/dist/js/pages/dashboard.js"></script>
-
-        <script src="<?php echo BASE_URL; ?>/plugins/select2/js/select2.full.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/chart.js/Chart.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/loaders/init.js"></script>
+    <!-- jQuery -->
+    <!-- Bootstrap 4 -->
+    <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="<?php echo BASE_URL; ?>/plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="<?php echo BASE_URL; ?>/plugins/sparklines/sparkline.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="<?php echo BASE_URL; ?>/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="<?php echo BASE_URL; ?>/plugins/moment/moment.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="<?php echo BASE_URL; ?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="<?php echo BASE_URL; ?>/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="<?php echo BASE_URL; ?>/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="<?php echo BASE_URL; ?>/dist/js/adminlte.js"></script>
+    <script src="<?php echo BASE_URL; ?>/dist/js/pages/dashboard.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/select2/js/select2.full.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/chart.js/Chart.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/loaders/init.js"></script>
 
 
 </body>
