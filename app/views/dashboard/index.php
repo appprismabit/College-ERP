@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/fontawesome-free/css/all.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bootstrap 4 -->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- iCheck -->
@@ -25,22 +23,15 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/summernote/summernote-bs4.min.css">
+
+
     <script src="<?php echo BASE_URL; ?>/plugins/custom/custom.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/jquery/jquery.min.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/jquery-ui/jquery-ui.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     <script src="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.js"></script>
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/toastr/toastr.css">
-
-
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/select2/css/select2.min.css">
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/summernote/summernote-bs4.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/custom/css/ol.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/loaders/loader-progress.css">
 
@@ -50,12 +41,6 @@
 
 
     <script src="<?php echo BASE_URL; ?>/plugins/custom/js/ol.js"></script>
-
-
-<style>
-    
-</style>
-
 
 </head>
 
@@ -109,11 +94,6 @@
         <!-- ./wrapper -->
 
         <!-- jQuery -->
-
-        <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-        <script>
-            $.widget.bridge('uibutton', $.ui.button)
-        </script>
         <!-- Bootstrap 4 -->
         <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
         <!-- ChartJS -->
@@ -141,14 +121,6 @@
         <script src="<?php echo BASE_URL; ?>/plugins/select2/js/select2.full.min.js"></script>
         <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="<?php echo BASE_URL; ?>/plugins/chart.js/Chart.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/sparklines/sparkline.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/daterangepicker/daterangepicker.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/summernote/summernote-bs4.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/dist/js/adminlte.js"></script>
-
-        <script src="<?php echo BASE_URL; ?>/dist/js/pages/dashboard.js"></script>
         <script src="<?php echo BASE_URL; ?>/plugins/loaders/init.js"></script>
 
 
