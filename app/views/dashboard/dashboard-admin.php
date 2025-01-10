@@ -16,7 +16,7 @@
          </div>
          <!-- Text below the image -->
 
-         <h5 class="mt-3">SIS</h5>
+         <span class="mt-3 text-md">SIS</span>
 
        </div>
      </a>
@@ -33,7 +33,7 @@
          </div>
          <!-- Text below the image -->
 
-         <h5 class="mt-3">Course</h5>
+         <span class="mt-3  text-md">Course</span>
 
        </div>
      </a>
@@ -50,7 +50,7 @@
          </div>
          <!-- Text below the image -->
 
-         <h5 class="mt-3">Fees</h5>
+         <span class="mt-3  text-md">Fees</span>
 
        </div>
      </a>
@@ -67,7 +67,7 @@
          </div>
          <!-- Text below the image -->
 
-         <h5 class="mt-3">Online Admission</h5>
+         <span class="mt-3  text-md">Online Admission</span>
 
        </div>
      </a>
@@ -85,7 +85,7 @@
          </div>
          <!-- Text below the image -->
 
-         <h5 class="mt-3">Exam</h5>
+         <span class="mt-3 text-md">Exam</span>
 
        </div>
      </a>
@@ -102,7 +102,7 @@
          </div>
          <!-- Text below the image -->
 
-         <h5 class="mt-3">Attendance</h5>
+         <span class="mt-3  text-md">Attendance</span>
 
        </div>
      </a>
@@ -119,7 +119,7 @@
          </div>
          <!-- Text below the image -->
 
-         <h5 class="mt-3">Library</h5>
+         <span class="mt-3  text-md">Library</span>
 
        </div>
      </a>
@@ -136,7 +136,7 @@
          </div>
          <!-- Text below the image -->
 
-         <h5 class="mt-3">Faculty</h5>
+         <span class="mt-3  text-md">Faculty</span>
 
        </div>
      </a>
@@ -153,7 +153,7 @@
          </div>
          <!-- Text below the image -->
 
-         <h5 class="mt-3">Document</h5>
+         <span class="mt-3  text-md">Document</span>
 
        </div>
      </a>

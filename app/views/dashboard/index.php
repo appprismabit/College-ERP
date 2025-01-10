@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/select2/css/select2.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/custom/css/ol.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/loaders/loader-progress.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/css/style.css">
 
     <script>
         $.widget.bridge('uibutton', $.ui.button)
@@ -93,7 +94,7 @@
                     <!-- /.content -->
                 </div>
                 <!-- /.content-wrapper -->
-               
+
 
             </div>
             <?php include BASE_PATH . '/layout/footer.php'; ?>
