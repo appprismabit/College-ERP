@@ -127,7 +127,7 @@
 
    </div>
    <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
-     <a href="/feature-student-information-system" style="text-decoration: none; color: black;">
+   <a href="<?php echo BASE_URL; ?>/faculty/index" style="text-decoration: none; color: black;">
        <div class="card shadow-lg text-center p-2">
          <!-- Image first -->
          <div>
