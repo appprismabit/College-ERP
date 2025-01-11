@@ -63,13 +63,13 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <h4 class="m-0"> <i class="fa fa-user-check" aria-hidden="true"></i> Manage Attendance</h4>
+                                        <h4 class="m-0"> <i class="fa fa-user-graduate" aria-hidden="true"></i> Online Admission</h4>
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
 
                                         <ol class="breadcrumb float-sm-right">
                                             <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>/dashboard/index">Home</a></li>
-                                            <li class="breadcrumb-item "><a href="<?php echo BASE_URL;?>/attendance/index">Manage Attendance</a></li>
+                                            <li class="breadcrumb-item "><a href="<?php echo BASE_URL; ?>/dashboard/index">Online Admission</a></li>
                                         </ol>
                                     </div><!-- /.col -->
                                 </div>
@@ -86,67 +86,46 @@
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-header text-uppercase bg-primary">
-                                        <h4 class="text-sm"> Attendance</h4>
+                                        <h4 class="text-sm"> Online Admission Details</h4>
                                     </div>
 
                                     <div class="card-body p-4 text-sm">
                                         <div class="row">
                                             <div class="col-12 col-md-3">
                                                 <div class="form-group">
-                                                    <label for="courseSelect">Course</label>
-                                                    <select class="form-control" id="courseSelect">
-                                                        <option>Select Course</option>
-                                                        <option value="Course 1">Course 1</option>
-                                                        <option value="Course 2">Course 2</option>
-                                                    </select>
+                                                    <label for="courseSelect">From Date</label>
+                                                    <input type="date" class="form-control" />
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-3">
                                                 <div class="form-group">
-                                                    <label for="deptSelect">Section Department</label>
-                                                    <select class="form-control" id="deptSelect">
-                                                        <option>Select Department</option>
-                                                        <option>Department 1</option>
-                                                        <option>Department 2</option>
-                                                    </select>
+                                                    <label for="deptSelect">To Date</label>
+                                                    <input type="date" class="form-control" />
                                                 </div>
 
                                             </div>
-                                            <div class="col-12 col-md-3">
-                                                <div class="form-group">
-                                                    <label for="dateSelect">Date</label>
-                                                    <input type="date" class="form-control" id="dateSelect" />
-                                                </div>
-
-                                            </div>
-
                                             <div class="col-12 col-md-3">
                                                 <div class="form-group">
                                                     <label>&nbsp;</label>
-                                                    <button type="button" class="btn btn-primary btn-sm p-2 form-control" onclick="getStudent();"><i class="fas fa-search"></i> Get student</button>
+                                                    <button type="button" class="btn btn-primary btn-sm p-2 form-control" onclick="getStudent();"><i class="fas fa-search"></i> Get Details</button>
                                                 </div>
 
                                             </div>
                                         </div>
-
-
-
-
-
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="container-fluid ">
+                    <div class="container-fluid mt-4">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-header text-uppercase justify-content-between d-flex">
-                                        <div class="mt-2">Attendance for: <span id="attendanceFor"></span></div>
-                                        <div class="mt-2">Department: <span id="department"></span></div>
-                                        <div class="mt-2">Date: <span id="date"></span></div>
+                                        <div class="mt-2">From Date: <span id="attendanceFor"></span></div>
+                                        <div class="mt-2">To Date: <span id="department"></span></div>
+
                                     </div>
 
                                     <div class="card-body">
@@ -155,27 +134,46 @@
                                                 <th>#</th>
                                                 <th>Name</th>
                                                 <th>Gender</th>
-                                                <th>Roll</th>
                                                 <th>Status</th>
+                                                <th>More Details</th>
                                             </tr>
                                             <tbody>
                                                 <tr>
                                                     <td>1</td>
                                                     <td>Mir</td>
                                                     <td>Male</td>
-                                                    <td>2024/02/02</td>
-                                                    <td><select class="form-control">
-                                                            <option value="Present">Undefined</option>
-                                                            <option value="Present">Present</option>
-                                                            <option value="Absent">Absent</option>
-                                                        </select></td>
+
+                                                    <td><button type="button" class="btn btn-danger btn-sm">Pending</button></td>
+                                                    <td><button type="button" class="btn btn-info btn-sm">More Info</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Alakesh Gogoi</td>
+                                                    <td>Male</td>
+
+                                                    <td><button type="button" class="btn btn-danger btn-sm">Pending</button></td>
+                                                    <td><button type="button" class="btn btn-info btn-sm">More Info</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Imdadul Hoque</td>
+                                                    <td>Male</td>
+
+                                                    <td><button type="button" class="btn btn-success btn-sm">Approved</button></td>
+                                                    <td><button type="button" class="btn btn-info btn-sm">More Info</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Tanmay</td>
+                                                    <td>Male</td>
+
+                                                    <td><button type="button" class="btn btn-danger btn-sm">Pending</button></td>
+                                                    <td><button type="button" class="btn btn-info btn-sm">More Info</button></td>
                                                 </tr>
                                             </tbody>
                                         </table>
 
-                                        <button type="button" class="btn btn-success btn-sm mt-4 p-2 btn-save">
-                                            <i class="fas fa-save me-2"></i> Save
-                                        </button>
+
 
                                     </div>
                                 </div>

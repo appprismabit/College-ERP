@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manage Attendance</title>
+    <title>Fees Due</title>
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
@@ -63,13 +63,13 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <h4 class="m-0"> <i class="fa fa-user-check" aria-hidden="true"></i> Manage Attendance</h4>
+                                        <h4 class="m-0 text-danger"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Fees Due</h4>
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
 
                                         <ol class="breadcrumb float-sm-right">
                                             <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>/dashboard/index">Home</a></li>
-                                            <li class="breadcrumb-item "><a href="<?php echo BASE_URL;?>/attendance/index">Manage Attendance</a></li>
+                                            <li class="breadcrumb-item "><a href="<?php echo BASE_URL; ?>/fees/index">Fees</a></li>
                                         </ol>
                                     </div><!-- /.col -->
                                 </div>
@@ -85,8 +85,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card">
-                                    <div class="card-header text-uppercase bg-primary">
-                                        <h4 class="text-sm"> Attendance</h4>
+                                    <div class="card-header text-uppercase bg-danger">
+                                        <h4 class="text-sm">Fees Due Details</h4>
                                     </div>
 
                                     <div class="card-body p-4 text-sm">
@@ -103,19 +103,26 @@
                                             </div>
                                             <div class="col-12 col-md-3">
                                                 <div class="form-group">
-                                                    <label for="deptSelect">Section Department</label>
-                                                    <select class="form-control" id="deptSelect">
-                                                        <option>Select Department</option>
-                                                        <option>Department 1</option>
-                                                        <option>Department 2</option>
+                                                    <label for="dateSelect">Semester</label>
+                                                    <select class="form-control" id="dateSelect">
+                                                        <option>Selester</option>
+                                                        <option value="Course 1">All</option>
+                                                        <option value="Course 2">Semester 1</option>
+                                                        <option value="Course 2">Semester 2</option>
+                                                        <option value="Course 2">Semester 3</option>
                                                     </select>
                                                 </div>
 
                                             </div>
+
                                             <div class="col-12 col-md-3">
                                                 <div class="form-group">
-                                                    <label for="dateSelect">Date</label>
-                                                    <input type="date" class="form-control" id="dateSelect" />
+                                                    <label for="dateSelect">Batch</label>
+                                                    <select class="form-control" id="dateSelect">
+                                                        <option>Year</option>
+                                                        <option value="Course 1">2024</option>
+                                                        <option value="Course 2">2025</option>
+                                                    </select>
                                                 </div>
 
                                             </div>
@@ -123,59 +130,57 @@
                                             <div class="col-12 col-md-3">
                                                 <div class="form-group">
                                                     <label>&nbsp;</label>
-                                                    <button type="button" class="btn btn-primary btn-sm p-2 form-control" onclick="getStudent();"><i class="fas fa-search"></i> Get student</button>
+                                                    <button type="button" class="btn btn-danger btn-sm p-2 form-control" onclick="getStudent();"><i class="fas fa-search"></i> Get Details</button>
                                                 </div>
 
                                             </div>
                                         </div>
-
-
-
-
-
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="container-fluid ">
+                    <div class="container-fluid text-sm">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card">
-                                    <div class="card-header text-uppercase justify-content-between d-flex">
-                                        <div class="mt-2">Attendance for: <span id="attendanceFor"></span></div>
-                                        <div class="mt-2">Department: <span id="department"></span></div>
-                                        <div class="mt-2">Date: <span id="date"></span></div>
+                                    <div class="card-header text-uppercase justify-content-between d-flex ">
+                                        <button class="btn btn-info btn-sm float-right">Get Fee Structure</button>
+                                        <div class="mt-2">course: <span id="attendanceFor"></span></div>
+                                        <div class="mt-2">batch: <span id="department"></span></div>
                                     </div>
 
                                     <div class="card-body">
+
                                         <table class="table table-hover table-bordered">
                                             <tr>
                                                 <th>#</th>
+                                                <th>Enrollment Number</th>
+                                                <th>Roll Number</th>
                                                 <th>Name</th>
-                                                <th>Gender</th>
-                                                <th>Roll</th>
-                                                <th>Status</th>
+                                                <th>Course</th>
+                                                <th>Semester</th>
+                                                <th>Due Amount</th>
+                                                <th>Amount Break down</th>
                                             </tr>
+
                                             <tbody>
                                                 <tr>
                                                     <td>1</td>
-                                                    <td>Mir</td>
-                                                    <td>Male</td>
+                                                    <td>1236781926</td>
+
                                                     <td>2024/02/02</td>
-                                                    <td><select class="form-control">
-                                                            <option value="Present">Undefined</option>
-                                                            <option value="Present">Present</option>
-                                                            <option value="Absent">Absent</option>
-                                                        </select></td>
+                                                    <td>Imdadul Hoque</td>
+                                                    <td>Course 1</td>
+                                                    <td>Semester 1 </td>
+                                                    <td>45000</td>
+                                                    <td><a href="<?php echo BASE_URL; ?>/fees/fees_due_single"><button type="button" class="btn btn-info btn-sm">View</button></a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
 
-                                        <button type="button" class="btn btn-success btn-sm mt-4 p-2 btn-save">
-                                            <i class="fas fa-save me-2"></i> Save
-                                        </button>
+
 
                                     </div>
                                 </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manage Attendance</title>
+    <title>View Attendance</title>
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
@@ -63,13 +63,14 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <h4 class="m-0"> <i class="fa fa-user-check" aria-hidden="true"></i> Manage Attendance</h4>
+                                        <h4 class="m-0"> <i class="fa fa-user-check" aria-hidden="true"></i> View Attendance</h4>
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
 
                                         <ol class="breadcrumb float-sm-right">
                                             <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>/dashboard/index">Home</a></li>
-                                            <li class="breadcrumb-item "><a href="<?php echo BASE_URL;?>/attendance/index">Manage Attendance</a></li>
+                                            <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>/attendance/index">View Attendance</a></li>
+
                                         </ol>
                                     </div><!-- /.col -->
                                 </div>
@@ -86,14 +87,13 @@
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-header text-uppercase bg-primary">
-                                        <h4 class="text-sm"> Attendance</h4>
+                                        <h4 class="text-sm"> View Attendance</h4>
                                     </div>
-
                                     <div class="card-body p-4 text-sm">
                                         <div class="row">
-                                            <div class="col-12 col-md-3">
+                                            <div class="col-12 col-md-2">
                                                 <div class="form-group">
-                                                    <label for="courseSelect">Course</label>
+                                                    <label for="courseSelect">Select Course</label>
                                                     <select class="form-control" id="courseSelect">
                                                         <option>Select Course</option>
                                                         <option value="Course 1">Course 1</option>
@@ -101,29 +101,53 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-3">
+                                            <div class="col-12 col-md-2">
                                                 <div class="form-group">
-                                                    <label for="deptSelect">Section Department</label>
-                                                    <select class="form-control" id="deptSelect">
-                                                        <option>Select Department</option>
-                                                        <option>Department 1</option>
-                                                        <option>Department 2</option>
+                                                    <label for="courseSelect">Select Semester</label>
+                                                    <select class="form-control" id="courseSelect">
+                                                        <option>Select Semester</option>
+                                                        <option value="Course 1">Semeter 1</option>
+                                                        <option value="Course 2">Semester 2</option>
                                                     </select>
                                                 </div>
-
                                             </div>
-                                            <div class="col-12 col-md-3">
+                                            <div class="col-12 col-md-2">
                                                 <div class="form-group">
-                                                    <label for="dateSelect">Date</label>
-                                                    <input type="date" class="form-control" id="dateSelect" />
+                                                    <label for="deptSelect">Month</label>
+                                                    <select class="form-control" id="deptSelect">
+
+                                                        <option>Select Month</option>
+                                                        <option>January</option>
+                                                        <option>February</option>
+                                                        <option>March</option>
+                                                        <option>April</option>
+                                                        <option>May</option>
+                                                        <option>June</option>
+                                                        <option>Jully</option>
+                                                        <option>August</option>
+                                                        <option>September</option>
+                                                        <option>October</option>
+                                                        <option>November</option>
+                                                        <option>December</option>
+
+
+                                                    </select>
                                                 </div>
-
                                             </div>
-
-                                            <div class="col-12 col-md-3">
+                                            <div class="col-12 col-md-2">
+                                                <div class="form-group">
+                                                    <label for="courseSelect">Select Year</label>
+                                                    <select class="form-control" id="courseSelect">
+                                                        <option>Select Year</option>
+                                                        <option value="Course 1">2024</option>
+                                                        <option value="Course 2">2025</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
                                                 <div class="form-group">
                                                     <label>&nbsp;</label>
-                                                    <button type="button" class="btn btn-primary btn-sm p-2 form-control" onclick="getStudent();"><i class="fas fa-search"></i> Get student</button>
+                                                    <button type="button" class="btn btn-primary btn-sm p-2 form-control" onclick="getAttendance();"><i class="fas fa-search"></i> Get Attendance</button>
                                                 </div>
 
                                             </div>
@@ -132,50 +156,49 @@
 
 
 
-
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-                    <div class="container-fluid ">
+                    <div class="container-fluid mt-2">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card">
-                                    <div class="card-header text-uppercase justify-content-between d-flex">
-                                        <div class="mt-2">Attendance for: <span id="attendanceFor"></span></div>
-                                        <div class="mt-2">Department: <span id="department"></span></div>
-                                        <div class="mt-2">Date: <span id="date"></span></div>
+                                    <div class="card-header text-uppercase d-flex justify-content-between">
+                                        <div class="mt-2">Course: <span id="attendanceFor"></span></div>
+                                        <div class="mt-2">Semester: <span id="department"></span></div>
+                                        <div class="mt-2">Month: <span id="date"></span></div>
+                                        <div class="mt-2">Year: <span id="date"></span></div>
                                     </div>
-
                                     <div class="card-body">
                                         <table class="table table-hover table-bordered">
                                             <tr>
                                                 <th>#</th>
+                                                <th>Roll No</th>
                                                 <th>Name</th>
                                                 <th>Gender</th>
-                                                <th>Roll</th>
-                                                <th>Status</th>
+                                                <th>Present Days</th>
+                                                <th>Absent Days</th>
+                                                <th>Percentage</th>
+                                                <th>More</th>
                                             </tr>
                                             <tbody>
                                                 <tr>
                                                     <td>1</td>
-                                                    <td>Mir</td>
-                                                    <td>Male</td>
                                                     <td>2024/02/02</td>
-                                                    <td><select class="form-control">
-                                                            <option value="Present">Undefined</option>
-                                                            <option value="Present">Present</option>
-                                                            <option value="Absent">Absent</option>
-                                                        </select></td>
+                                                    <td>Mir Kashem Ali</td>
+                                                    <td>Male</td>
+                                                    <td>12</td>
+                                                    <td>10</td>
+                                                    <td>56%</td>
+                                                    <td><button type="button" class="btn btn-info btn-sm">View</button></td>
+
+
                                                 </tr>
                                             </tbody>
                                         </table>
 
-                                        <button type="button" class="btn btn-success btn-sm mt-4 p-2 btn-save">
-                                            <i class="fas fa-save me-2"></i> Save
-                                        </button>
 
                                     </div>
                                 </div>
@@ -184,17 +207,12 @@
                     </div>
                 </section>
             </div><!-- /.container-fluid -->
-
         </div><!-- /.content-wrapper -->
-
         <?php include BASE_PATH . '/layout/footer.php'; ?>
-
     </div>
-
     <script>
         $.widget.bridge('uibutton', $.ui.button)
     </script>
-
     <script src="<?php echo BASE_URL; ?>/plugins/jquery/jquery.min.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/jquery-ui/jquery-ui.min.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -210,17 +228,8 @@
     <script src="<?php echo BASE_URL; ?>/plugins/loaders/init.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/custom/custom.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.js"></script>
-
     <script>
-        function getStudent() {
-            var courseSelect = $('#courseSelect').val();
-            var deptSelect = $('#deptSelect').val();
-            var date = $('#dateSelect').val();
-
-            $("#attendanceFor").text(courseSelect); // Set the course in the span
-            $("#department").text(deptSelect); // Set the department in the span
-            $("#date").text(date); // Set the date in the span
-        }
+        function getAttendance() {}
     </script>
 
 </body>

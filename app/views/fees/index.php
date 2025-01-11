@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manage Attendance</title>
+    <title>Fees</title>
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
@@ -33,9 +33,6 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/loaders/loader-progress.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/css/style.css">
 
-    <script>
-        $.widget.bridge('uibutton', $.ui.button)
-    </script>
 
 
 
@@ -74,13 +71,13 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <h4 class="m-0"> <i class="fa fa-user-check" aria-hidden="true"></i> Manage Attendance</h4>
+                                        <h4 class="m-0"><i class="fas fa-money-bill-wave me-2"></i> Manage Fees</h4>
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
 
                                         <ol class="breadcrumb float-sm-right">
                                             <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>/dashboard/index">Home</a></li>
-                                            <li class="breadcrumb-item active">Manage Attendance</li>
+                                            <li class="breadcrumb-item active">Fees</li>
                                         </ol>
                                     </div><!-- /.col -->
                                 </div>
@@ -101,16 +98,16 @@
                                         <div class="row">
 
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
-                                                <a href="<?php echo BASE_URL; ?>/attendance/manage_attendance" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center p-2">
+                                                <a href="<?php echo BASE_URL; ?>/fees/fees_due" style="text-decoration: none; color: black;">
+                                                    <div class="card shadow-lg text-center p-2 ">
                                                         <!-- Image first -->
                                                         <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/manage_attendance.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
+                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/manage_attendance.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="Fees Due">
 
                                                         </div>
                                                         <!-- Text below the image -->
 
-                                                        <span class="mt-3 text-sm">Manage Attendance</span>
+                                                        <span class="mt-3 text-sm text-danger">Fees Due</span>
 
                                                     </div>
                                                 </a>
@@ -127,7 +124,7 @@
                                                         </div>
                                                         <!-- Text below the image -->
 
-                                                        <span class="mt-3 text-sm">View Attendance</span>
+                                                        <span class="mt-3 text-sm text-success">Fees Paid</span>
 
                                                     </div>
                                                 </a>

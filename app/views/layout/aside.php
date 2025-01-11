@@ -71,7 +71,7 @@
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="pages/layout/top-nav.html" class="nav-link">
+              <a href="<?php echo BASE_URL;?>/attendance/view_attendance" class="nav-link">
                 <i class="fas fa-angle-right nav-icon"></i>
                 <p>View Attendance</p>
               </a>
