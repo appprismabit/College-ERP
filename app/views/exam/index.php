@@ -37,10 +37,7 @@
 
 
     <style>
-        .card {
-            text-decoration: none;
-            color: black;
-        }
+
     </style>
 
 
@@ -70,8 +67,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-sm-6">
-                                        <h4 class="m-0 text-uppercase"><i class="fas fa-pen fa-sm"></i> Manage Exams</h4>
+                                    <div class="col-sm-6" style="color : black">
+                                        <i class="fas fa-pen fa-sm"></i> Manage Exams
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
 
@@ -98,10 +95,10 @@
                                         <div class="row">
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
                                                 <a href="<?php echo BASE_URL; ?>/fees/fees_paid" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center bg-primary p-2">
+                                                    <div class="card shadow-lg text-center card-outline card-primary p-2">
                                                         <!-- Image first -->
                                                         <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/create_exam.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
+                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/create_exam.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="Create Exam">
 
                                                         </div>
                                                         <!-- Text below the image -->
@@ -113,10 +110,10 @@
                                             </div>
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
                                                 <a href="<?php echo BASE_URL; ?>/fees/fees_paid" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center bg-warning p-2">
+                                                    <div class="card shadow-lg text-center card-outline card-warning p-2">
                                                         <!-- Image first -->
                                                         <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/create_exam.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
+                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/create_exam.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="Upcoming Exam">
 
                                                         </div>
                                                         <!-- Text below the image -->
@@ -128,10 +125,10 @@
                                             </div>
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
                                                 <a href="<?php echo BASE_URL; ?>/fees/fees_paid" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center bg-danger p-2">
+                                                    <div class="card shadow-lg text-center p-2 card-outline card-danger">
                                                         <!-- Image first -->
                                                         <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/create_exam.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
+                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/create_exam.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="Pending Exam">
 
                                                         </div>
                                                         <!-- Text below the image -->
@@ -141,15 +138,76 @@
                                                     </div>
                                                 </a>
                                             </div>
-
                                         </div>
-
                                     </div>
-
                                 </div>
-
-
                             </div><!-- /.container-fluid -->
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="card ">
+                                    <div class="card-header" style="color: black">
+                                        View Exam List
+                                    </div>
+                                    <div class="card-body">
+                                        <table class="table table-bordered table-hovered">
+                                            <thead class="bg-dark">
+                                                <tr>
+                                                    <th>Course Name</th>
+                                                    <th>Course Code</th>
+                                                    <th>Exam Type</th>
+                                                    <th>Date</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Maths</td>
+                                                    <td>Maths-101</td>
+                                                    <td>Midterm</td>
+                                                    <td>2022-02-15</td>
+                                                    <td><span class="badge bg-danger">Upcoming</span>
+                                                    </td>
+                                                    <td><a href="<?php echo BASE_URL; ?>/exam/exam_details_single" class="btn  btn-outline-info btn-sm">View</a> <a href="#" class="btn  btn-outline-warning btn-sm">Edit</a> <a href="#" class="btn  btn-outline-danger btn-sm">Cancel</a> </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Maths</td>
+                                                    <td>Maths-101</td>
+                                                    <td>Midterm</td>
+                                                    <td>2022-02-15</td>
+                                                    <td><span class="badge bg-danger">Upcoming</span>
+                                                    </td>
+                                                    <td><a href="<?php echo BASE_URL; ?>/exam/exam_details_single" class="btn  btn-outline-info btn-sm">View</a> <a href="#" class="btn  btn-outline-warning btn-sm ">Edit</a> <a href="#" class="btn  btn-outline-danger btn-sm">Cancel</a> </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Maths</td>
+                                                    <td>Maths-101</td>
+                                                    <td>Midterm</td>
+                                                    <td>2022-02-15</td>
+                                                    <td><span class="badge bg-warning">Ongoing</span>
+                                                    </td>
+                                                    <td><a href="<?php echo BASE_URL; ?>/exam/exam_details_single" class="btn  btn-outline-info btn-sm">View</a> <a href="#" class="btn  btn-outline-warning btn-sm">Edit</a> <a href="#" class="btn  btn-outline-danger btn-sm">Cancel</a> </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Maths</td>
+                                                    <td>Maths-101</td>
+                                                    <td>Midterm</td>
+                                                    <td>2022-02-15</td>
+                                                    <td><span class="badge bg-success ">Completed</span>
+                                                    </td>
+                                                    <td><a href="<?php echo BASE_URL; ?>/exam/exam_details_single" class="btn  btn-outline-info btn-sm">View</a> <a href="#" class="btn  btn-outline-warning btn-sm">Edit</a> <a href="#" class="btn  btn-outline-danger btn-sm">Cancel</a> </td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>

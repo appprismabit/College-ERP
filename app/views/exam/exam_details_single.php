@@ -37,10 +37,7 @@
 
 
     <style>
-        .card {
-            text-decoration: none;
-            color: black;
-        }
+
     </style>
 
 
@@ -70,14 +67,14 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-sm-6">
-                                        <h4 class="m-0"><i class="fas fa-money-bill-wave me-2"></i> Manage Fees</h4>
+                                    <div class="col-sm-6" style="color : black">
+                                        <i class="fa fa-info-circle"></i> Exam Details
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
 
                                         <ol class="breadcrumb float-sm-right">
                                             <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>/dashboard/index">Home</a></li>
-                                            <li class="breadcrumb-item active">Fees</li>
+                                            <li class="breadcrumb-item active">Exam</li>
                                         </ol>
                                     </div><!-- /.col -->
                                 </div>
@@ -86,7 +83,6 @@
                     </div>
                 </div>
                 <!-- /.content-header -->
-
                 <!-- Main content -->
                 <section class="content">
                     <div class="container-fluid">
@@ -96,51 +92,26 @@
 
                                     <div class="card-body">
                                         <div class="row">
-
-                                            <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
-                                                <a href="<?php echo BASE_URL; ?>/fees/fees_due" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center p-2 card-outline card-danger">
-                                                        <!-- Image first -->
-                                                        <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/manage_attendance.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="Fees Due">
-
-                                                        </div>
-                                                        <!-- Text below the image -->
-
-                                                        <span class="mt-3 text-sm ">Fees Due</span>
-
-                                                    </div>
-                                                </a>
-
-
+                                            <div class="col-6">
+                                                <div> Course Name: <span>Maths</span></div>
+                                                <div> Course Name: <span>Maths</span></div>
+                                                <div> Course Name: <span>Maths</span></div>
                                             </div>
-                                            <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
-                                                <a href="<?php echo BASE_URL; ?>/fees/fees_paid" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center card-outline card-success p-2">
-                                                        <!-- Image first -->
-                                                        <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/view_attendance.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
-
-                                                        </div>
-                                                        <!-- Text below the image -->
-
-                                                        <span class="mt-3 text-sm ">Fees Paid</span>
-
-                                                    </div>
-                                                </a>
-
-
-
+                                            <div class="col-6">
+                                               <div>Course Code: <span>Maths-101</span></div>
                                             </div>
 
                                         </div>
-
                                     </div>
 
                                 </div>
 
-                            </div>
-                        </div><!-- /.container-fluid -->
+
+                            </div><!-- /.container-fluid -->
+
+                        </div>
+
+                    </div>
                 </section>
                 <!-- /.content -->
             </div>

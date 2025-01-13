@@ -87,7 +87,7 @@
                                         <div class="row">
 
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
-                                                <a href="<?php echo BASE_URL; ?>/sis/index" style="text-decoration: none; color: black;">
+                                                <a href="<?php echo BASE_URL; ?>/course/course_single" style="text-decoration: none; color: black;">
                                                     <div class="card shadow-lg text-center p-2">
                                                         <!-- Image first -->
                                                         <div>
@@ -157,8 +157,22 @@
                                         <div class="card-body">
                                             <div class="row form-group">
                                                 <div class="col-md-12 p-1">
+                                                    <label>Title of the Course</label>
                                                     <input type="text" id="title_faculty" class="form-control" placeholder="Title of Course">
                                                 </div>
+                                                <div class="col-md-12 p-1">
+                                                    <label>Enter Course Code</label>
+                                                    <input type="text" id="title_faculty" class="form-control" placeholder="Enter Course Code">
+                                                </div>
+                                                <div class="col-md-12 p-1">
+                                                    <label>Enter Course Icon</label>
+                                                    <input type="file" id="title_faculty" class="form-control" placeholder="Icon">
+                                                </div>
+                                                <div class="col-md-12 p-1">
+                                                    <label>Enter Number of Semesters</label>
+                                                    <input type="number" id="title_faculty" class="form-control" placeholder="Number of semester">
+                                                </div>
+
 
 
 
