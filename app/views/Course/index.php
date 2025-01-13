@@ -92,7 +92,7 @@
                                                     <div class="card shadow-lg text-center p-2 card-outline card-primary">
                                                         <!-- Image first -->
                                                         <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/computer-icon.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
+                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/computer-icon.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="MCA">
 
                                                         </div>
                                                         <!-- Text below the image -->
@@ -105,11 +105,11 @@
 
                                             </div>
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
-                                                <a href="<?php echo BASE_URL; ?>/sis/index" style="text-decoration: none; color: black;">
+                                                <a href="<?php echo BASE_URL; ?>/course/course_single" style="text-decoration: none; color: black;">
                                                     <div class="card shadow-lg text-center p-2 card-outline card-primary">
                                                         <!-- Image first -->
                                                         <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/computer-icon.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
+                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/computer-icon.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="BCA">
 
                                                         </div>
                                                         <!-- Text below the image -->
@@ -122,11 +122,11 @@
 
                                             </div>
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
-                                                <a href="<?php echo BASE_URL; ?>/sis/index" style="text-decoration: none; color: black;">
+                                                <a href="<?php echo BASE_URL; ?>/course/course_single" style="text-decoration: none; color: black;">
                                                     <div class="card shadow-lg text-center p-2 card-outline card-primary">
                                                         <!-- Image first -->
                                                         <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/MBA.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
+                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/MBA.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="MBA">
 
                                                         </div>
                                                         <!-- Text below the image -->
