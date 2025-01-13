@@ -56,6 +56,7 @@
                 <!-- Content Header (Page header) -->
                 <div class="content-header">
                     <div class="container-fluid">
+
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
@@ -89,14 +90,18 @@
                                         <!-- we are adding the accordion ID so Bootstrap's collapse plugin detects it -->
                                         <div id="accordion">
                                             <div class="card card-outline card-primary">
+
                                                 <div class="card-header">
                                                     <h4 class="card-title w-100">
                                                         <a class="d-block w-100" data-bs-toggle="collapse" href="#collapseOne">
                                                             Semester 1
+                                                            <div class="float-right">
+                                                                <i class="fas fa-plus-circle"></i>
+                                                            </div>
                                                         </a>
                                                     </h4>
                                                 </div>
-                                                <div id="collapseOne" class="collapse" data-bs-parentt="#accordion">
+                                                <div id="collapseOne" class="collapse show" data-bs-parentt="#accordion">
                                                     <div class="card-body">
                                                         <table class="table table-bordered table-hovered">
                                                             <thead>
@@ -105,7 +110,6 @@
                                                                     <th>Subject Name</th>
                                                                     <th>Subject Code</th>
                                                                     <th>Syallabus</th>
-
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -148,8 +152,14 @@
                                                     <h4 class="card-title w-100">
                                                         <a class="d-block w-100" data-bs-toggle="collapse" href="#collapseTwo">
                                                             Semester 2
+
+                                                            <div class="float-right">
+                                                                <i class="fas fa-plus-circle"></i>
+                                                            </div>
                                                         </a>
+
                                                     </h4>
+
                                                 </div>
                                                 <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
                                                     <div class="card-body">
@@ -203,6 +213,9 @@
                                                     <h4 class="card-title w-100">
                                                         <a class="d-block w-100" data-bs-toggle="collapse" href="#collapseThree">
                                                             Semester 3
+                                                            <div class="float-right">
+                                                                <i class="fas fa-plus-circle"></i>
+                                                            </div>
                                                         </a>
                                                     </h4>
                                                 </div>
@@ -253,11 +266,15 @@
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <div class="card card-outline card-primary">
                                                 <div class="card-header">
                                                     <h4 class="card-title w-100">
                                                         <a class="d-block w-100" data-bs-toggle="collapse" href="#collapseFour">
                                                             Semester 4
+                                                            <div class="float-right">
+                                                                <i class="fas fa-plus-circle"></i>
+                                                            </div>
                                                         </a>
                                                     </h4>
                                                 </div>
@@ -363,6 +380,7 @@
                 </section>
                 <!-- /.content -->
             </div>
+
             <!-- /.content-wrapper -->
             <?php include BASE_PATH . '/layout/footer.php'; ?>
 
