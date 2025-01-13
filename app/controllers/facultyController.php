@@ -6,6 +6,11 @@ class facultyController extends Controller
         $this->view('faculty/index');
     }
 
+    public function faculty_single()
+    {
+        $this->view('faculty/faculty_single');
+    }
+
     public function addFaculty()
     {
         $this->view('faculty/add');
