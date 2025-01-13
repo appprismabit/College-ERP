@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/select2/css/select2.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/custom/css/ol.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/loaders/loader-progress.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/css/style.css">
 
 
 
@@ -58,7 +59,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <h4 class="m-0"> <i class="fas fa-book me-2"></i> Course Details</h4>
+                                        <i class="fas fa-book me-2"></i> Course Details
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
 
@@ -81,14 +82,14 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-8">
-                                <div class="card">
+                                <div class="card text-sm">
 
                                     <div class="card-body">
                                         <div class="row">
 
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
                                                 <a href="<?php echo BASE_URL; ?>/course/course_single" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center p-2">
+                                                    <div class="card shadow-lg text-center p-2 card-outline card-primary">
                                                         <!-- Image first -->
                                                         <div>
                                                             <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/computer-icon.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
@@ -96,7 +97,7 @@
                                                         </div>
                                                         <!-- Text below the image -->
 
-                                                        <h5 class="mt-3">MCA</h5>
+                                                        <span class="mt-3">MCA</span>
 
                                                     </div>
                                                 </a>
@@ -105,7 +106,7 @@
                                             </div>
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
                                                 <a href="<?php echo BASE_URL; ?>/sis/index" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center p-2">
+                                                    <div class="card shadow-lg text-center p-2 card-outline card-primary">
                                                         <!-- Image first -->
                                                         <div>
                                                             <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/computer-icon.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
@@ -113,7 +114,7 @@
                                                         </div>
                                                         <!-- Text below the image -->
 
-                                                        <h5 class="mt-3">BCA</h5>
+                                                        <span class="mt-3">BCA</span>
 
                                                     </div>
                                                 </a>
@@ -122,7 +123,7 @@
                                             </div>
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
                                                 <a href="<?php echo BASE_URL; ?>/sis/index" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center p-2">
+                                                    <div class="card shadow-lg text-center p-2 card-outline card-primary">
                                                         <!-- Image first -->
                                                         <div>
                                                             <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/MBA.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
@@ -130,7 +131,7 @@
                                                         </div>
                                                         <!-- Text below the image -->
 
-                                                        <h5 class="mt-3">MBA</h5>
+                                                        <span class="mt-3">MBA</span>
 
                                                     </div>
                                                 </a>
@@ -146,44 +147,40 @@
 
                             </div>
                             <div class="col-md-4">
-                                <div class="card">
+                                <div class="card card-outline card-success text-sm">
                                     <div class="card-header">
-                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            <i class="fa fa-plus-circle me-2"></i>
-                                            Add Course
-                                        </a>
+                                        <i class="fa fa-plus-circle"></i> Add Course
                                     </div>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="card-body">
-                                            <div class="row form-group">
-                                                <div class="col-md-12 p-1">
-                                                    <label>Title of the Course</label>
-                                                    <input type="text" id="title_faculty" class="form-control" placeholder="Title of Course">
-                                                </div>
-                                                <div class="col-md-12 p-1">
-                                                    <label>Enter Course Code</label>
-                                                    <input type="text" id="title_faculty" class="form-control" placeholder="Enter Course Code">
-                                                </div>
-                                                <div class="col-md-12 p-1">
-                                                    <label>Enter Course Icon</label>
-                                                    <input type="file" id="title_faculty" class="form-control" placeholder="Icon">
-                                                </div>
-                                                <div class="col-md-12 p-1">
-                                                    <label>Enter Number of Semesters</label>
-                                                    <input type="number" id="title_faculty" class="form-control" placeholder="Number of semester">
-                                                </div>
+                                    <div class="card-body">
+                                        <div class="row form-group">
+                                            <div class="col-md-12 p-1">
+                                                <label>Title of the Course</label>
+                                                <input type="text" id="title_faculty" class="form-control" placeholder="Title of Course">
+                                            </div>
+                                            <div class="col-md-12 p-1">
+                                                <label>Enter Course Code</label>
+                                                <input type="text" id="title_faculty" class="form-control" placeholder="Enter Course Code">
+                                            </div>
+                                            <div class="col-md-12 p-1">
+                                                <label>Enter Course Icon</label>
+                                                <input type="file" id="title_faculty" class="form-control" placeholder="Icon">
+                                            </div>
+                                            <div class="col-md-12 p-1">
+                                                <label>Enter Number of Semesters</label>
+                                                <input type="number" id="title_faculty" class="form-control" placeholder="Number of semester">
+                                            </div>
 
 
 
 
-                                                <div class="col-md-12 p-1">
-                                                    <button type="button" name="" id="" class="btn btn-success btn-md btn-block"> Submit</button>
-                                                </div>
-
+                                            <div class="col-md-12 p-1">
+                                                <button type="button" name="" id="" class="btn btn-success btn-md btn-block"> Submit</button>
                                             </div>
 
                                         </div>
+
                                     </div>
+
                                 </div>
                             </div>
 
