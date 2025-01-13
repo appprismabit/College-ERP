@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/select2/css/select2.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/custom/css/ol.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/loaders/loader-progress.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/css/style.css">
+
 
 
 
@@ -58,7 +60,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <h4 class="m-0"> <i class="fas fa-book me-2"></i> Master Of Computer Applications</h4>
+                                        <i class="fas fa-book me-2"></i> Master Of Computer Applications
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
 
@@ -80,74 +82,13 @@
                 <section class="content">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-8">
-                                <div class="card">
+                            <div class="col-12 col-md-8">
 
-                                    <div class="card-body">
-                                        <div class="row">
-
-                                            <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
-                                                <a href="<?php echo BASE_URL; ?>/sis/index" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center p-2">
-                                                        <!-- Image first -->
-                                                        <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/computer-icon.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
-
-                                                        </div>
-                                                        <!-- Text below the image -->
-
-                                                        <h5 class="mt-3">MCA</h5>
-
-                                                    </div>
-                                                </a>
-
-
-                                            </div>
-                                            <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
-                                                <a href="<?php echo BASE_URL; ?>/sis/index" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center p-2">
-                                                        <!-- Image first -->
-                                                        <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/computer-icon.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
-
-                                                        </div>
-                                                        <!-- Text below the image -->
-
-                                                        <h5 class="mt-3">BCA</h5>
-
-                                                    </div>
-                                                </a>
-
-
-                                            </div>
-                                            <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
-                                                <a href="<?php echo BASE_URL; ?>/sis/index" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center p-2">
-                                                        <!-- Image first -->
-                                                        <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/MBA.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
-
-                                                        </div>
-                                                        <!-- Text below the image -->
-
-                                                        <h5 class="mt-3">MBA</h5>
-
-                                                    </div>
-                                                </a>
-
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                                <div class="card">
+                                <div class="card text-sm">
                                     <div class="card-body">
                                         <!-- we are adding the accordion ID so Bootstrap's collapse plugin detects it -->
                                         <div id="accordion">
-                                            <div class="card card-primary">
+                                            <div class="card card-outline card-primary">
                                                 <div class="card-header">
                                                     <h4 class="card-title w-100">
                                                         <a class="d-block w-100" data-bs-toggle="collapse" href="#collapseOne">
@@ -155,47 +96,109 @@
                                                         </a>
                                                     </h4>
                                                 </div>
-                                                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                                <div id="collapseOne" class="collapse" data-bs-parentt="#accordion">
                                                     <div class="card-body">
-                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                                                        3
-                                                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                                        laborum
-                                                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
-                                                        nulla
-                                                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                                                        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                                        beer
-                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                                                        labore sustainable VHS.
+                                                        <table class="table table-bordered table-hovered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Sl No</th>
+                                                                    <th>Subject Name</th>
+                                                                    <th>Subject Code</th>
+                                                                    <th>Syallabus</th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Subject1</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Subject2</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Subject3</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>Subject4</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+                                                                </tr>
+                                                            </tbody>
+
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card card-danger">
+
+                                            <div class="card card-outline card-primary">
                                                 <div class="card-header">
                                                     <h4 class="card-title w-100">
                                                         <a class="d-block w-100" data-bs-toggle="collapse" href="#collapseTwo">
-                                                        Semester 2
+                                                            Semester 2
                                                         </a>
                                                     </h4>
                                                 </div>
-                                                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
                                                     <div class="card-body">
-                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                                                        3
-                                                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                                        laborum
-                                                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
-                                                        nulla
-                                                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                                                        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                                        beer
-                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                                                        labore sustainable VHS.
+                                                        <table class="table table-bordered table-hovered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Sl No</th>
+                                                                    <th>Subject Name</th>
+                                                                    <th>Subject Code</th>
+                                                                    <th>Syallabus</th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Subject1</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Subject2</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Subject3</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>Subject4</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                            </tbody>
+
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card card-success">
+                                            <div class="card card-outline card-primary">
                                                 <div class="card-header">
                                                     <h4 class="card-title w-100">
                                                         <a class="d-block w-100" data-bs-toggle="collapse" href="#collapseThree">
@@ -203,19 +206,50 @@
                                                         </a>
                                                     </h4>
                                                 </div>
-                                                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
                                                     <div class="card-body">
-                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                                                        3
-                                                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                                        laborum
-                                                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
-                                                        nulla
-                                                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                                                        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                                        beer
-                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                                                        labore sustainable VHS.
+                                                        <table class="table table-bordered table-hovered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Sl No</th>
+                                                                    <th>Subject Name</th>
+                                                                    <th>Subject Code</th>
+                                                                    <th>Syallabus</th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Subject1</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Subject2</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Subject3</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>Subject4</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                            </tbody>
+
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
@@ -223,23 +257,54 @@
                                                 <div class="card-header">
                                                     <h4 class="card-title w-100">
                                                         <a class="d-block w-100" data-bs-toggle="collapse" href="#collapseFour">
-                                                            Semester 3
+                                                            Semester 4
                                                         </a>
                                                     </h4>
                                                 </div>
-                                                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                                <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
                                                     <div class="card-body">
-                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                                                        3
-                                                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                                        laborum
-                                                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
-                                                        nulla
-                                                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                                                        nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                                                        beer
-                                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                                                        labore sustainable VHS.
+                                                        <table class="table table-bordered table-hovered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Sl No</th>
+                                                                    <th>Subject Name</th>
+                                                                    <th>Subject Code</th>
+                                                                    <th>Syallabus</th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Subject1</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Subject2</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Subject3</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>Subject4</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                            </tbody>
+
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
@@ -249,50 +314,47 @@
 
                             </div>
                             <div class="col-md-4">
-                                <div class="card">
+                                <div class="card card-outline card-success text-sm">
                                     <div class="card-header">
-                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            <i class="fa fa-plus-circle me-2"></i>
-                                            Add Subject
-                                        </a>
+                                        <i class="fas fa-plus-circle"></i> Add Subjects
                                     </div>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="card-body">
-                                            <div class="row form-group">
-                                                <div class="col-md-12 p-1">
-                                                    <label>Select Semester</label>
-                                                    <select class="form-control">
-                                                        <option>Sem 1</option>
-                                                        <option>Sem 2</option>
-                                                        <option>Sem 3</option>
-                                                        <option>Sem 4</option>
-                                                        <option>Sem 5</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-12 p-1">
-                                                    <label>Name of the Subject</label>
-                                                    <input type="text" id="title_faculty" class="form-control" placeholder="Name of the subject">
-                                                </div>
-                                                <div class="col-md-12 p-1">
-                                                    <label>Enter Subject Code</label>
-                                                    <input type="text" id="title_faculty" class="form-control" placeholder="Name of the subject">
-                                                </div>
-                                                <div class="col-md-12 p-1">
-                                                    <label>Upload Syallbus</label>
-                                                    <input type="file" id="title_faculty" class="form-control" placeholder="Icon">
-                                                </div>
+
+                                    <div class="card-body">
+                                        <div class="row form-group">
+                                            <div class="col-md-12 p-1">
+                                                <label>Select Semester</label>
+                                                <select class="form-control">
+                                                    <option>Sem 1</option>
+                                                    <option>Sem 2</option>
+                                                    <option>Sem 3</option>
+                                                    <option>Sem 4</option>
+                                                    <option>Sem 5</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-12 p-1">
+                                                <label>Name of the Subject</label>
+                                                <input type="text" id="title_faculty" class="form-control" placeholder="Name of the subject">
+                                            </div>
+                                            <div class="col-md-12 p-1">
+                                                <label>Enter Subject Code</label>
+                                                <input type="text" id="title_faculty" class="form-control" placeholder="Name of the subject">
+                                            </div>
+                                            <div class="col-md-12 p-1">
+                                                <label>Upload Syallbus</label>
+                                                <input type="file" id="title_faculty" class="form-control" placeholder="Icon">
+                                            </div>
 
 
 
 
-                                                <div class="col-md-12 p-1">
-                                                    <button type="button" name="" id="" class="btn btn-success btn-md btn-block"> Submit</button>
-                                                </div>
-
+                                            <div class="col-md-12 p-1">
+                                                <button type="button" name="" id="" class="btn btn-success btn-md btn-block"> Submit</button>
                                             </div>
 
                                         </div>
+
                                     </div>
+
                                 </div>
                             </div>
 
