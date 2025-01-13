@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/select2/css/select2.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/custom/css/ol.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/loaders/loader-progress.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/css/style.css">
 
     <script>
         $.widget.bridge('uibutton', $.ui.button)
@@ -123,7 +124,7 @@
                                                     <td>LLB</td>
                                                     <td>+91 987456321</td>
                                                     <td>gdas@mail.com</td>
-                                                    <td><button type="button" name="" id="" class="btn btn-primary btn-xs"> <i class="fa fa-user" aria-hidden="true"></i> Profile</button> </td>
+                                                    <td><button type="button" name="" id="" onclick="window.location.href='<?php echo BASE_URL ?>/faculty/faculty_single';" class="btn btn-primary btn-xs"> <i class="fa fa-user" aria-hidden="true"></i> Profile</button> </td>
                                                 </tr>
                                                 <tr>
                                                     <td scope="row"></td>
@@ -136,39 +137,38 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                            Regiter Faculty
-                                        </a>
+                                <div class="card card-info">
+                                    <div class="card-header m-0">
+                                        Register Faculty
                                     </div>
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="card-body">
-                                            <div class="row form-group">
-                                                <div class="col-md-12 p-1">
-                                                    <input type="text" id="title_faculty" class="form-control" placeholder="Title of Faculty">
-                                                </div>
-                                                <div class="col-md-12 p-1">
-                                                    <select class="form-control" name="" id="">
-                                                        <option>----Select Department----</option>
-                                                        <option>Department 1</option>
-                                                        <option>Department 2</option>
-                                                        <option>Department 3</option>
 
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-12 p-1">
-                                                    <input type="text" id="phone_faculty" class="form-control" placeholder="Phone Number">
-                                                </div>
-                                                <div class="col-md-12 p-1">
-                                                    <input type="text" id="email_faculty" class="form-control" placeholder="Email of Faculty">
-                                                </div>
-                                                <div class="col-md-12 p-1">
-                                                    <button type="button" name="" id="" class="btn btn-success btn-md btn-block"> Submit</button>
-                                                </div>
-
+                                    <div class="card-body">
+                                        <div class="row form-group">
+                                            <div class="col-md-12 p-1">
+                                                <label for="">Name of Faculty</label>
+                                                <input type="text" id="title_faculty" class="form-control">
                                             </div>
+                                            <div class="col-md-12 p-1">
+                                                <label for="">Select Department</label>
+                                                <select class="form-control" name="" id="">
+                                                    <option>----Select Department----</option>
+                                                    <option>Department 1</option>
+                                                    <option>Department 2</option>
+                                                    <option>Department 3</option>
 
+                                                </select>
+                                            </div>
+                                            <div class="col-md-12 p-1">
+                                                <label for="">Phone </label>
+                                                <input type="text" id="phone_faculty" class="form-control">
+                                            </div>
+                                            <div class="col-md-12 p-1">
+                                                <label for="">Email</label>
+                                                <input type="text" id="email_faculty" class="form-control">
+                                            </div>
+                                            <div class="col-md-12 p-1">
+                                                <button type="button" name="" id="" class="btn btn-success btn-md btn-block"> Submit</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
