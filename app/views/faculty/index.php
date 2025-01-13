@@ -74,7 +74,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <h4 class="m-0"> <i class="fa fa-user-circle" aria-hidden="true"></i> Faculty List</h4>
+                                        <i class="fa fa-user-circle" aria-hidden="true"></i> Faculty List
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
 
