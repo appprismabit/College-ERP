@@ -99,7 +99,7 @@
 
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
                                                 <a href="<?php echo BASE_URL; ?>/fees/fees_due" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center p-2 ">
+                                                    <div class="card shadow-lg bg-danger text-center p-2 ">
                                                         <!-- Image first -->
                                                         <div>
                                                             <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/manage_attendance.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="Fees Due">
@@ -107,7 +107,7 @@
                                                         </div>
                                                         <!-- Text below the image -->
 
-                                                        <span class="mt-3 text-sm text-danger">Fees Due</span>
+                                                        <span class="mt-3 text-sm ">Fees Due</span>
 
                                                     </div>
                                                 </a>
@@ -115,8 +115,8 @@
 
                                             </div>
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
-                                                <a href="<?php echo BASE_URL; ?>/attendance/view_attendance" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center p-2">
+                                                <a href="<?php echo BASE_URL; ?>/fees/fees_paid" style="text-decoration: none; color: black;">
+                                                    <div class="card shadow-lg text-center bg-success p-2">
                                                         <!-- Image first -->
                                                         <div>
                                                             <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/view_attendance.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="SIS">
@@ -124,7 +124,7 @@
                                                         </div>
                                                         <!-- Text below the image -->
 
-                                                        <span class="mt-3 text-sm text-success">Fees Paid</span>
+                                                        <span class="mt-3 text-sm ">Fees Paid</span>
 
                                                     </div>
                                                 </a>
@@ -139,8 +139,8 @@
 
                                 </div>
 
-
-                            </div><!-- /.container-fluid -->
+                            </div>
+                        </div><!-- /.container-fluid -->
                 </section>
                 <!-- /.content -->
             </div>
@@ -148,32 +148,33 @@
             <?php include BASE_PATH . '/layout/footer.php'; ?>
 
         </div>
-        <script>
-            $.widget.bridge('uibutton', $.ui.button)
-        </script>
-        <script src="<?php echo BASE_URL; ?>/plugins/jquery/jquery.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/jquery-ui/jquery-ui.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- ChartJS -->
-        <script src="<?php echo BASE_URL; ?>/plugins/chart.js/Chart.min.js"></script>
-        <!-- Sparkline -->
-        <script src="<?php echo BASE_URL; ?>/plugins/sparklines/sparkline.js"></script>
-        <!-- daterangepicker -->
-        <script src="<?php echo BASE_URL; ?>/plugins/moment/moment.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/daterangepicker/daterangepicker.js"></script>
-        <!-- Tempusdominus Bootstrap 4 -->
-        <script src="<?php echo BASE_URL; ?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-        <!-- Summernote -->
-        <script src="<?php echo BASE_URL; ?>/plugins/summernote/summernote-bs4.min.js"></script>
-        <!-- overlayScrollbars -->
-        <script src="<?php echo BASE_URL; ?>/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-        <!-- AdminLTE App -->
-        <script src="<?php echo BASE_URL; ?>/dist/js/adminlte.js"></script>
-        <script src="<?php echo BASE_URL; ?>/dist/js/pages/dashboard.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/select2/js/select2.full.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/loaders/init.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/custom/custom.js"></script>
-        <script src="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.js"></script>
+    </div>
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <script src="<?php echo BASE_URL; ?>/plugins/jquery/jquery.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="<?php echo BASE_URL; ?>/plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="<?php echo BASE_URL; ?>/plugins/sparklines/sparkline.js"></script>
+    <!-- daterangepicker -->
+    <script src="<?php echo BASE_URL; ?>/plugins/moment/moment.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="<?php echo BASE_URL; ?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="<?php echo BASE_URL; ?>/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="<?php echo BASE_URL; ?>/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="<?php echo BASE_URL; ?>/dist/js/adminlte.js"></script>
+    <script src="<?php echo BASE_URL; ?>/dist/js/pages/dashboard.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/select2/js/select2.full.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/loaders/init.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/custom/custom.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.js"></script>
 
 
 </body>

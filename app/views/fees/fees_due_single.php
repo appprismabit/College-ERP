@@ -167,11 +167,11 @@
                                                         </tr>
                                                     </tbody>
                                                     <tfoot class="text-uppercase text-dark">
-    <tr>
-        <th colspan="5" class="text-right">Amount to be paid</th>
-        <th>36000</th>
-    </tr>
-</tfoot>
+                                                        <tr>
+                                                            <th colspan="5" class="text-right">Amount to be paid</th>
+                                                            <th>36000</th>
+                                                        </tr>
+                                                    </tfoot>
 
                                                 </table>
                                             </div>

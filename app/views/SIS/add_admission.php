@@ -241,6 +241,7 @@
             <?php include BASE_PATH . '/layout/footer.php'; ?>
 
         </div>
+    </div>
         <!-- ./wrapper -->
 
         <!-- jQuery -->

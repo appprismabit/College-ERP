@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fees Due</title>
+    <title>Fees Paid</title>
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
@@ -64,7 +64,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <h4 class="m-0 text-danger"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Fees Due</h4>
+                                        <h4 class="m-0 text-success"> <i class="fa fa-check-circle" aria-hidden="true"></i> Fees Paid</h4>
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
 
@@ -86,8 +86,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card">
-                                    <div class="card-header text-uppercase bg-danger">
-                                        <h4 class="text-sm">Fees Due Details</h4>
+                                    <div class="card-header text-uppercase bg-success">
+                                        <h4 class="text-sm">Fees Paid Details</h4>
                                     </div>
 
                                     <div class="card-body p-4 text-sm">
@@ -131,7 +131,7 @@
                                             <div class="col-12 col-md-3">
                                                 <div class="form-group">
                                                     <label>&nbsp;</label>
-                                                    <button type="button" class="btn btn-danger btn-sm p-2 form-control" onclick="getStudent();"><i class="fas fa-search"></i> Get Details</button>
+                                                    <button type="button" class="btn btn-success btn-sm p-2 form-control" onclick="getStudent();"><i class="fas fa-search"></i> Get Details</button>
                                                 </div>
 
                                             </div>
@@ -154,23 +154,23 @@
 
                                     <div class="card-body">
 
-                                        <table class="table table-hover table-bordered">
-                                            <tr class="bg-dark">
+                                        <table class="table table-hover  table-bordered">
+                                            <thead class="bg-dark">
+                                            <tr>
                                                 <th>#</th>
                                                 <th>Enrollment Number</th>
                                                 <th>Roll Number</th>
                                                 <th>Name</th>
                                                 <th>Course</th>
                                                 <th>Semester</th>
-                                                <th>Due Amount</th>
+                                                <th>Paid Amount</th>
                                                 <th>Amount Break down</th>
                                             </tr>
-
+                                            </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>1</td>
                                                     <td>1236781926</td>
-
                                                     <td>2024/02/02</td>
                                                     <td>Imdadul Hoque</td>
                                                     <td>Course 1</td>

@@ -66,7 +66,7 @@
                                 <div class="row">
 
                                     <div class="col-sm-6">
-                                        <h1 class="m-0"> Welcome</h1>
+                                        <h1 class="m-0"> Welcome Admin!</h1>
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
 
