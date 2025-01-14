@@ -15,4 +15,8 @@ class SISController extends Controller
     {
         $this->view('sis/student_list');
     }
+    public function student_single()
+    {
+        $this->view('sis/student_single');
+    }
 }

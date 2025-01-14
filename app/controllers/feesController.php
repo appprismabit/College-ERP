@@ -26,4 +26,9 @@ class feesController extends Controller
     }
 
     //Fees Paid Section Ends Here 
+
+    public function fees_invoice()
+    {
+        $this->view('fees/fees_invoice');
+    }
 }
