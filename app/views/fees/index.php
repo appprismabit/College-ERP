@@ -76,87 +76,46 @@
                 <section class="content">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="card">
 
-                                    <div class="card-body">
-                                        <div class="row">
-
-                                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-8 mt-8">
-                                                <a href="<?php echo BASE_URL; ?>/fees/fees_due" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center p-2 card-outline card-danger">
-                                                        <!-- Image first -->
-                                                        <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/manage_attendance.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="Fees Due">
-
-                                                        </div>
-                                                        <!-- Text below the image -->
-
-                                                        <span class="mt-3 text-sm ">Fees Due</span>
-
-                                                    </div>
-                                                </a>
-
-
-                                            </div>
-                                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-8 mt-8">
-                                                <a href="<?php echo BASE_URL; ?>/fees/fees_paid" style="text-decoration: none; color: black;">
-                                                    <div class="card shadow-lg text-center card-outline card-success p-2">
-                                                        <!-- Image first -->
-                                                        <div>
-                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/view_attendance.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="Fees Paid">
-
-                                                        </div>
-                                                        <!-- Text below the image -->
-                                                        <span class="mt-3 text-sm ">Fees Paid</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-
-                                </div>
-
-
-                            </div>
-                            <div class="col-12 col-md-6 mx-auto text-xs">
+                            <div class="col-12 col-md-7 mx-auto text-xs">
                                 <div class="card p-3">
-                                    <div class="">
+                                    <div class="card-header text-md text-uppercase text-green">
+                                        Collect Fee of Student
+                                    </div>
+                                    <div class="card-body">
+
                                         <div class="row">
-                                            <div class="col-12 col-md-4">
+
+                                            <div class="col-md-8">
                                                 <div class="form-group">
-                                                    <label for="search">Enter Enrollment Number</label>
-                                                    <input type="text" class="form-control" placeholder="Enrollment Number Here">
+                                                    <input type="text" class="form-control" placeholder="Enter Enrollment Number Here">
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-md-2">
+                                            <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label for="search">&nbsp;</label>
-                                                    <button type="button" class="form-control btn btn-outline-primary btn-sm" onclick="searchBtn();">Search</button>
+                                                    <button type="button" class="form-control btn btn-outline-primary btn-sm" onclick="searchBtn();"> <i class="fa fa-search" aria-hidden="true"></i> Search</button>
                                                 </div>
                                             </div>
                                         </div>
 
                                     </div>
-
+                                </div>
+                                <div class="card">
                                     <div class="card-body" id="studentFeeDetailsInfo" style="display: none;">
                                         <div class="ribbon-wrapper ribbon-lg">
                                             <div class="ribbon bg-danger">
-                                                Unpaid
+                                                Due
                                             </div>
                                         </div>
 
                                         <div class=" d-flex">
                                             <!-- Image on the left -->
-                                            <div class="col-3">
-                                                <img src="<?php echo BASE_URL; ?>/img/student/demostudent.jpg" style="height: 120px; width: 120px;">
-                                                <!-- Enrollment Number: <span class="text-bold">LLB20251001</span> -->
+                                            <div class="col-2">
+                                                <img src="<?php echo BASE_URL; ?>/img/student/demostudent.jpg" style="height: 120px; width: 100%;">
+                                                <button class="btn btn-info btn-sm btn-block mt-1"> <i class="fa fa-user" aria-hidden="true"></i> Student Profile</button>
                                             </div>
                                             <!-- Text on the right -->
-                                            <div class="col-4">
+                                            <div class="col-5">
 
                                                 RollNo: <span class="text-bold">2025/LLB/0001</span><br>
                                                 Student Name: <span class="text-bold">Imdadul Haque</span><br>
@@ -165,7 +124,7 @@
                                                 Mother Name: <span class="text-bold">Moshira Begum</span><br>
 
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-5">
                                                 Semester: <span class="text-bold">1st</span><br>
                                                 Course: <span class="text-bold">LLB</span><br>
                                                 Contact No: <span class="text-bold">1234567890</span><br>
@@ -189,7 +148,7 @@
                                             <div class="col-12">
 
 
-                                                <table class="table table-bordered text-sm">
+                                                <table class="table table-bordered text-xs p-0 m-0">
                                                     <tr>
                                                         <th>#</th>
                                                         <th>Info</th>
@@ -236,34 +195,67 @@
 
                                                         </tr>
                                                     </tbody>
-                                                    <tfoot class="text-uppercase text-dark">
+                                                    <tfoot class="text-uppercase text-dark form-group">
                                                         <tr>
-                                                            <th colspan="5" class="text-right">Amount to be paid</th>
+                                                            <th colspan="5" class="text-right">Total Amount</th>
                                                             <th>36000</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="5" class="text-right">Already Paid</th>
+                                                            <th>20000</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="5" class="text-right">Due Amount</th>
+                                                            <th>16000/-</th>
+                                                        </tr>
+                                                        <tr class="form-group">
+                                                            <th colspan="2" class="text-right">Payment Details</th>
+                                                            <th>
+                                                                <input type="date" class="form-control">
+                                                            </th>
+                                                            <th>
+
+                                                                <select class="form-control" name="" id="">
+                                                                    <option>--Select Payment Method---</option>
+                                                                    <option>Cash</option>
+                                                                    <option>Draft</option>
+                                                                    <option>UPI</option>
+                                                                    <option>Account Transfer</option>
+                                                                </select>
+
+                                                            </th>
+                                                            <th>
+                                                                <input type="text" class="form-control" placeholder="Ref No if any...">
+                                                            </th>
+                                                            <th>
+                                                                <input type="text" class="form-control" placeholder="Enter Amount">
+                                                            </th>
                                                         </tr>
                                                     </tfoot>
 
                                                 </table>
-                                                <button type="button" data-toggle="modal" data-target="#modal-xl" class="btn btn-primary float-right">Pay</button>
+
+                                                <button type="button" data-toggle="modal" data-target="#modal-xl" class="btn btn-primary btn-sm float-right"> <i class="fa fa-arrow-down" aria-hidden="true"></i> Collect Payment</button>
+
 
                                             </div>
                                             <!-- model -->
                                             <div class="modal fade" id="modal-xl">
                                                 <div class="modal-dialog modal-xl">
                                                     <div class="modal-content">
-                                                        <div class="modal-header">
-
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
+                                                        <div class="ribbon-wrapper ribbon-lg">
+                                                            <div class="ribbon bg-success">
+                                                                PAID
+                                                            </div>
                                                         </div>
+
                                                         <div class="invoice p-3 mb-3">
                                                             <!-- title row -->
                                                             <div class="row">
                                                                 <div class="col-12">
                                                                     <h4>
                                                                         <i class="fas fa-globe"></i> University of Demo
-                                                                        <small class="float-right">Date: 2/10/2014</small>
+
                                                                     </h4>
                                                                 </div>
                                                                 <!-- /.col -->
@@ -294,9 +286,9 @@
                                                                 <!-- /.col -->
                                                                 <div class="col-sm-4 invoice-col">
                                                                     <b>Invoice #007612</b><br>
-
                                                                     <b>Order ID:</b> 4F3S8J<br>
-                                                                    <b>Account:</b> 968-34567
+                                                                    <b>Account:</b> 968-34567 </b> <br>
+                                                                    <b>Date: 2/10/2014</b>
                                                                 </div>
                                                                 <!-- /.col -->
                                                             </div>
@@ -402,16 +394,12 @@
                                                         <div class="modal-footer justify-content-between">
                                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                                             <div>
-
                                                                 <button type="button" class="btn btn-primary generate_pdf" style="margin-right: 5px;">
                                                                     <i class="fas fa-download"></i> Generate PDF
                                                                 </button>
-                                                                <button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Submit
-                                                                    Payment
+                                                                <button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Print
                                                                 </button>
-
                                                             </div>
-
                                                         </div>
                                                     </div>
                                                     <!-- /.modal-content -->
@@ -421,16 +409,55 @@
                                             <!-- model end -->
                                         </div>
                                     </div>
+                                </div>
 
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-8 mt-8">
+                                                <a href="<?php echo BASE_URL; ?>/fees/fees_due" style="text-decoration: none; color: black;">
+                                                    <div class="card shadow-lg text-center p-2 card-outline card-danger">
+                                                        <!-- Image first -->
+                                                        <div>
+                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/manage_attendance.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="Fees Due">
+
+                                                        </div>
+                                                        <!-- Text below the image -->
+
+                                                        <span class="mt-3 text-sm ">Fees Due</span>
+
+                                                    </div>
+                                                </a>
+
+
+                                            </div>
+                                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-8 mt-8">
+                                                <a href="<?php echo BASE_URL; ?>/fees/fees_paid" style="text-decoration: none; color: black;">
+                                                    <div class="card shadow-lg text-center card-outline card-success p-2">
+                                                        <!-- Image first -->
+                                                        <div>
+                                                            <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/view_attendance.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="Fees Paid">
+
+                                                        </div>
+                                                        <!-- Text below the image -->
+                                                        <span class="mt-3 text-sm ">Fees Paid</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                    </div><!-- /.container-fluid -->
+
                 </section>
-                <!-- /.content -->
-            </div>
-            <!-- /.content-wrapper -->
+            </div><!-- /.container-fluid -->
+            <!-- /.content -->
+
             <?php include BASE_PATH . '/layout/footer.php'; ?>
         </div>
     </div>
