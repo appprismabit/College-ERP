@@ -141,21 +141,22 @@
                                         </div>
 
                                     </div>
+                                   
+                                    <div class="card-body" id="studentFeeDetailsInfo" style="display: none;">
                                     <div class="ribbon-wrapper ribbon-lg">
                                         <div class="ribbon bg-danger">
                                             Unpaid
                                         </div>
                                     </div>
 
-                                    <div class="card-body" id="studentFeeDetailsInfo" style="display: none;">
                                         <div class=" d-flex">
                                             <!-- Image on the left -->
-                                            <div class="col-5">
+                                            <div class="col-3">
                                                 <img src="<?php echo BASE_URL; ?>/img/student/demostudent.jpg" style="height: 120px; width: 120px;">
                                                 <!-- Enrollment Number: <span class="text-bold">LLB20251001</span> -->
                                             </div>
                                             <!-- Text on the right -->
-                                            <div class="col-3">
+                                            <div class="col-4">
 
                                                 RollNo: <span class="text-bold">2025/LLB/0001</span><br>
                                                 Student Name: <span class="text-bold">Imdadul Haque</span><br>
@@ -164,7 +165,7 @@
                                                 Mother Name: <span class="text-bold">Moshira Begum</span><br>
 
                                             </div>
-                                            <div class="col-3">
+                                            <div class="col-4">
                                                 Semester: <span class="text-bold">1st</span><br>
                                                 Course: <span class="text-bold">LLB</span><br>
                                                 Contact No: <span class="text-bold">1234567890</span><br>
