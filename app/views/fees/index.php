@@ -141,13 +141,13 @@
                                         </div>
 
                                     </div>
-                                   
+
                                     <div class="card-body" id="studentFeeDetailsInfo" style="display: none;">
-                                    <div class="ribbon-wrapper ribbon-lg">
-                                        <div class="ribbon bg-danger">
-                                            Unpaid
+                                        <div class="ribbon-wrapper ribbon-lg">
+                                            <div class="ribbon bg-danger">
+                                                Unpaid
+                                            </div>
                                         </div>
-                                    </div>
 
                                         <div class=" d-flex">
                                             <!-- Image on the left -->
@@ -437,12 +437,15 @@
     <script>
         $.widget.bridge('uibutton', $.ui.button)
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- JQuery -->
     <script src="<?php echo BASE_URL; ?>/plugins/jquery/jquery.min.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="<?php echo BASE_URL; ?>/plugins/popper/umd/popper.min.js"></script>
+
+
     <!-- ChartJS -->
     <script src="<?php echo BASE_URL; ?>/plugins/chart.js/Chart.min.js"></script>
     <!-- Sparkline -->
@@ -463,8 +466,8 @@
     <script src="<?php echo BASE_URL; ?>/plugins/loaders/init.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/custom/custom.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/jspdf/js/jspdf.umd.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/html2canvas/js/html2canvas.min.js"></script>
 
     <script>
         $('.generate_pdf').on('click', function() {
