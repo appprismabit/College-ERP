@@ -31,4 +31,5 @@ class feesController extends Controller
     {
         $this->view('fees/fees_invoice');
     }
+   
 }
