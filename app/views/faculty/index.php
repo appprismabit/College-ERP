@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Faculty Managment</title>
+    <title>Student Information System</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/fontawesome-free/css/all.min.css">
     <!-- Tempusdominus Bootstrap 4 -->
-    <link rel="stylesheet"
-        href="<?php echo BASE_URL; ?>/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- iCheck -->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- JQVMap -->
@@ -78,8 +79,7 @@
                                     <div class="col-sm-6">
 
                                         <ol class="breadcrumb float-sm-right">
-                                            <li class="breadcrumb-item"><a
-                                                    href="<?php echo BASE_URL; ?>/dashboard/index">Home</a></li>
+                                            <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>/dashboard/index">Home</a></li>
                                             <li class="breadcrumb-item active">Faculty</li>
                                         </ol>
                                     </div><!-- /.col -->
@@ -124,10 +124,7 @@
                                                     <td>LLB</td>
                                                     <td>+91 987456321</td>
                                                     <td>gdas@mail.com</td>
-                                                    <td><button type="button" name="" id=""
-                                                            onclick="window.location.href='<?php echo BASE_URL ?>/faculty/faculty_single';"
-                                                            class="btn btn-primary btn-xs"> <i class="fa fa-user"
-                                                                aria-hidden="true"></i> Profile</button> </td>
+                                                    <td><button type="button" name="" id="" onclick="window.location.href='<?php echo BASE_URL ?>/faculty/faculty_single';" class="btn btn-primary btn-xs"> <i class="fa fa-user" aria-hidden="true"></i> Profile</button> </td>
                                                 </tr>
                                                 <tr>
                                                     <td scope="row"></td>
@@ -170,8 +167,7 @@
                                                 <input type="text" id="email_faculty" class="form-control">
                                             </div>
                                             <div class="col-md-12 p-1">
-                                                <button type="button" name="" id=""
-                                                    class="btn btn-success btn-md btn-block"> Submit</button>
+                                                <button type="button" name="" id="" class="btn btn-success btn-md btn-block"> Submit</button>
                                             </div>
                                         </div>
                                     </div>
@@ -186,13 +182,11 @@
             </div><!-- /.container-fluid -->
             </section>
             <!-- /.content -->
-            <?php include BASE_PATH . '/layout/footer.php'; ?>
         </div>
         <!-- /.content-wrapper -->
-      
+        <?php include BASE_PATH . '/layout/footer.php'; ?>
 
     </div>
-    
     <script>
         $.widget.bridge('uibutton', $.ui.button)
     </script>
@@ -207,8 +201,7 @@
     <script src="<?php echo BASE_URL; ?>/plugins/moment/moment.min.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/daterangepicker/daterangepicker.js"></script>
     <!-- Tempusdominus Bootstrap 4 -->
-    <script src="<?php echo BASE_URL; ?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js">
-    </script>
+    <script src="<?php echo BASE_URL; ?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- Summernote -->
     <script src="<?php echo BASE_URL; ?>/plugins/summernote/summernote-bs4.min.js"></script>
     <!-- overlayScrollbars -->
@@ -220,6 +213,8 @@
     <script src="<?php echo BASE_URL; ?>/plugins/loaders/init.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/custom/custom.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.js"></script>
+
+
 </body>
 
 </html>

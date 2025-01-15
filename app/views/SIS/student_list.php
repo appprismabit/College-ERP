@@ -157,7 +157,7 @@
                                                     <td>Female</td>
                                                     <td>MCA</td>
                                                     <td>Semester 1</td>
-                                                    <td><a href="" class="btn btn-info btn-sm">Profile</a></td>
+                                                    <td><a href="<?php echo BASE_URL; ?>/sis/student_single" class="btn btn-info btn-sm">Profile</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>9868637</td>
@@ -166,7 +166,7 @@
                                                     <td>Female</td>
                                                     <td>MCA</td>
                                                     <td>Semester 1</td>
-                                                    <td><a href="" class="btn btn-info btn-sm">Profile</a></td>
+                                                    <td><a href="<?php echo BASE_URL; ?>/sis/student_single" class="btn btn-info btn-sm">Profile</a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>9868637</td>
@@ -175,7 +175,7 @@
                                                     <td>Male</td>
                                                     <td>MCA</td>
                                                     <td>Semester 1</td>
-                                                    <td><a href="" class="btn btn-info btn-sm">Profile</a></td>
+                                                    <td><a href="<?php echo BASE_URL; ?>/sis/student_single" class="btn btn-info btn-sm">Profile</a></td>
                                                 </tr>
                                             </tbody>
 

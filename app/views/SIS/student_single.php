@@ -77,7 +77,7 @@
 
                                         <ol class="breadcrumb float-sm-right">
                                             <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>/dashboard/index">Home</a></li>
-                                            <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>/sis/index">Student List</a></li>
+                                            <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>/sis/student_list">Student List</a></li>
                                             <li class="breadcrumb-item active">Student Profile</li>
                                         </ol>
                                     </div><!-- /.col -->
@@ -172,7 +172,7 @@
                                         <ul class="nav nav-pills">
                                             <li class="nav-item"><a class="nav-link active" href="#basic_info" data-bs-toggle="tab">Basic Info</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#attendance" data-bs-toggle="tab">Attendance</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="#feedback" data-bs-toggle="tab">Subject Details</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#subject_details" data-bs-toggle="tab">Subject Details</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#performance" data-bs-toggle="tab">Documents</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#payroll" data-bs-toggle="tab">Results</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#documents" data-bs-toggle="tab">Documents</a></li>
@@ -302,19 +302,256 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane" id="feedback">
+                                            <div class="tab-pane" id="subject_details">
                                                 <div class="card-body">
-                                                    Student Feedback
+                                                <div id="accordion">
+                                            <div class="card card-outline card-primary">
+
+                                                <div class="card-header">
+                                                    <h4 class="card-title w-100">
+                                                        <a class="d-block w-100" data-bs-toggle="collapse" href="#collapseOne">
+                                                            Semester 1
+                                                            <div class="float-right">
+                                                                <i class="fas fa-plus-circle"></i>
+                                                            </div>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseOne" class="collapse show" data-bs-parentt="#accordion">
+                                                    <div class="card-body">
+                                                        <table class="table table-bordered table-hovered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Sl No</th>
+                                                                    <th>Subject Name</th>
+                                                                    <th>Subject Code</th>
+                                                                    <th>Syallabus</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Subject1</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Subject2</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Subject3</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>Subject4</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+                                                                </tr>
+                                                            </tbody>
+
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card card-outline card-primary">
+                                                <div class="card-header">
+                                                    <h4 class="card-title w-100">
+                                                        <a class="d-block w-100" data-bs-toggle="collapse" href="#collapseTwo">
+                                                            Semester 2
+
+                                                            <div class="float-right">
+                                                                <i class="fas fa-plus-circle"></i>
+                                                            </div>
+                                                        </a>
+
+                                                    </h4>
+
+                                                </div>
+                                                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <table class="table table-bordered table-hovered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Sl No</th>
+                                                                    <th>Subject Name</th>
+                                                                    <th>Subject Code</th>
+                                                                    <th>Syallabus</th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Subject1</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Subject2</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Subject3</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>Subject4</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                            </tbody>
+
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card card-outline card-primary">
+                                                <div class="card-header">
+                                                    <h4 class="card-title w-100">
+                                                        <a class="d-block w-100" data-bs-toggle="collapse" href="#collapseThree">
+                                                            Semester 3
+                                                            <div class="float-right">
+                                                                <i class="fas fa-plus-circle"></i>
+                                                            </div>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <table class="table table-bordered table-hovered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Sl No</th>
+                                                                    <th>Subject Name</th>
+                                                                    <th>Subject Code</th>
+                                                                    <th>Syallabus</th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Subject1</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Subject2</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Subject3</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>Subject4</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                            </tbody>
+
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card card-outline card-primary">
+                                                <div class="card-header">
+                                                    <h4 class="card-title w-100">
+                                                        <a class="d-block w-100" data-bs-toggle="collapse" href="#collapseFour">
+                                                            Semester 4
+                                                            <div class="float-right">
+                                                                <i class="fas fa-plus-circle"></i>
+                                                            </div>
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                                                    <div class="card-body">
+                                                        <table class="table table-bordered table-hovered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Sl No</th>
+                                                                    <th>Subject Name</th>
+                                                                    <th>Subject Code</th>
+                                                                    <th>Syallabus</th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Subject1</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Subject2</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Subject3</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>Subject4</td>
+                                                                    <td>MCA-101</td>
+                                                                    <td><a class="btn btn-outline-info btn-sm" href="<?php echo BASE_URL; ?>/img/pdf/UPSC_CSE_Mains_Syllabus.pdf" download>Download Syallbus</a></td>
+
+                                                                </tr>
+                                                            </tbody>
+
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane" id="performance">
                                                 <div class="card-body">
-                                                    Performance & Appraisal
+                                                  Documents
                                                 </div>
                                             </div>
                                             <div class="tab-pane" id="payroll">
                                                 <div class="card-body">
-                                                    Payroll & Benefits
+                                                   Results
                                                 </div>
                                             </div>
                                             <div class="tab-pane" id="documents">
@@ -324,7 +561,7 @@
                                             </div>
                                             <div class="tab-pane" id="notice">
                                                 <div class="card-body">
-                                                    Notifications & Remarks
+                                                  Fees
                                                 </div>
                                             </div>
                                             <!-- /.tab-pane -->

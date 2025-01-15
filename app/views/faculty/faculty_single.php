@@ -42,10 +42,7 @@
 
 
     <style>
-        .card {
-            text-decoration: none;
-            color: black;
-        }
+       
     </style>
 
 
@@ -367,10 +364,9 @@
             </div><!-- /.container-fluid -->
 
             <!-- /.content -->
-            <?php include BASE_PATH . '/layout/footer.php'; ?>
         </div>
         <!-- /.content-wrapper -->
-       
+        <?php include BASE_PATH . '/layout/footer.php'; ?>
 
     </div>
     <script>
