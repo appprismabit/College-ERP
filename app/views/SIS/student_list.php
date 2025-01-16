@@ -1,4 +1,4 @@
-<div class="col-md-12 collapse" id="collectToday" data-parent="#accordion">
+<div class="col-md-12 collapse" id="student_list" data-parent="#accordion">
     <div class="card text-left">
         <div class="card-header">
             <div class="row">

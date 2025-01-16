@@ -9,6 +9,7 @@ body {
     font-family: Poppins, sans-serif;
     color: #696969;
     font-weight: bold;
+   
     
    
 }
@@ -27,22 +28,16 @@ body {
     background-color: #f1f1f1;
 }
 
-.table th,
-.table td {
-    text-align: center;
-    vertical-align: middle;
-}
+
 
 
 
 /* Additional Styling for Inputs and Selects */
-select.form-control,
+/* select.form-control,
 input.form-control {
     height: 40px;
     font-size: 14px;
-}
+} */
 
-.card-body p {
-    margin-bottom: 10px;
-}
+
 
