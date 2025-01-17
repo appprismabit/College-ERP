@@ -42,7 +42,7 @@
 <body>
 
     <div class="hold-transition sidebar-mini sidebar-collapse">
-        <div class="wrapper">
+        <div class="wrapper text-sm">
             <!-- Navbar -->
             <?php include BASE_PATH . '/layout/header.php'; ?>
             <!-- /.navbar -->
@@ -85,7 +85,7 @@
                                 <div class="card text-sm">
 
                                     <div class="card-body">
-                                        <div class="row">
+                                        <div class="row text-xs">
 
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
                                                 <a href="<?php echo BASE_URL; ?>/course/course_single" style="text-decoration: none; color: black;">
@@ -97,7 +97,7 @@
                                                         </div>
                                                         <!-- Text below the image -->
 
-                                                        <span class="mt-3">MCA</span>
+                                                        <span class="mt-3 ">MCA</span>
 
                                                     </div>
                                                 </a>

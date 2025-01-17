@@ -1,7 +1,7 @@
  <?php
 
   ?>
- <div class="row">
+ <div class="row text-xs">
    <div class="loader-overlay">
      <div class="loader"></div>
    </div>
@@ -16,7 +16,7 @@
          </div>
          <!-- Text below the image -->
 
-         <span class="mt-3 text-md">SIS</span>
+         <span class="mt-3 ">SIS</span>
 
        </div>
      </a>
@@ -33,7 +33,7 @@
          </div>
          <!-- Text below the image -->
 
-         <span class="mt-3  text-md">Course</span>
+         <span class="mt-3 ">Course</span>
 
        </div>
      </a>
@@ -50,7 +50,7 @@
          </div>
          <!-- Text below the image -->
 
-         <span class="mt-3  text-md">Fees</span>
+         <span class="mt-3 ">Fees</span>
 
        </div>
      </a>
@@ -67,7 +67,7 @@
          </div>
          <!-- Text below the image -->
 
-         <span class="mt-3  text-md">Online Admission</span>
+         <span class="mt-3">Online Admission</span>
 
        </div>
      </a>
@@ -85,7 +85,7 @@
          </div>
          <!-- Text below the image -->
 
-         <span class="mt-3 text-md">Exam</span>
+         <span class="mt-3">Exam</span>
 
        </div>
      </a>
@@ -102,7 +102,7 @@
          </div>
          <!-- Text below the image -->
 
-         <span class="mt-3  text-md">Attendance</span>
+         <span class="mt-3">Attendance</span>
 
        </div>
      </a>
@@ -119,7 +119,7 @@
          </div>
          <!-- Text below the image -->
 
-         <span class="mt-3  text-md">Library</span>
+         <span class="mt-3">Library</span>
 
        </div>
      </a>
@@ -136,7 +136,7 @@
          </div>
          <!-- Text below the image -->
 
-         <span class="mt-3  text-md">Faculty</span>
+         <span class="mt-3">Faculty</span>
 
        </div>
      </a>
@@ -153,7 +153,7 @@
          </div>
          <!-- Text below the image -->
 
-         <span class="mt-3  text-md">Document</span>
+         <span class="mt-3">Document</span>
 
        </div>
      </a>

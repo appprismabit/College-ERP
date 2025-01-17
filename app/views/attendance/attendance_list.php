@@ -23,7 +23,7 @@
 </style>
 <div class="col-md-12 collapse" id="attendance_list" data-parent="#accordion">
     <div class="card text-left">
-        <div class="card-header">
+        <div class="card-body">
             <div class="row text-xs">
                 <div class="col-12 col-md-12">
                     <label>Attandance Month: <span>June</span></label>
@@ -31,13 +31,7 @@
                     <div class="float-right">
                         <label>Date</label>
                         <input type="date" class="p-1 mr-2" style="border-radius: 50px;">
-                        <label>Month</label>
-                        <select class="p-2 mr-2" style="border-radius: 50px;">
-                            <option>January</option>
-                            <option>February</option>
-                            <option>March</option>
-                            <option>April</option>
-                        </select>
+
                         <label>Semester</label>
                         <select class="p-2 mr-2" style="border-radius: 50px;">
                             <option>1st</option>
@@ -60,7 +54,8 @@
     </div>
 
     <div class="attendance Details section text-xs" id="attendanceDetails" style="display: none;">
-        <div class="row">
+        <span class="text-md" style="color: goldenrod;"><i class="fas fa-trophy"></i> Top Attendance of the Month</span>
+        <div class="row mt-2">
             <div class="col-2">
                 <div class="card card-outline card-dark">
                     <div class="card-body">
@@ -76,7 +71,7 @@
                         </div>
 
                         <div class="circle   mx-auto text-xs ">
-                            <span>50%</span>
+                            <span>97%</span>
                         </div>
                     </div>
                 </div>
@@ -96,7 +91,7 @@
                         </div>
 
                         <div class="circle   mx-auto text-xs ">
-                            <span>50%</span>
+                            <span>95%</span>
                         </div>
                     </div>
                 </div>
@@ -116,7 +111,7 @@
                         </div>
 
                         <div class="circle   mx-auto text-xs ">
-                            <span>50%</span>
+                            <span>90%</span>
                         </div>
                     </div>
                 </div>
@@ -136,7 +131,7 @@
                         </div>
 
                         <div class="circle   mx-auto text-xs ">
-                            <span>50%</span>
+                            <span>88%</span>
                         </div>
                     </div>
                 </div>
@@ -156,7 +151,7 @@
                         </div>
 
                         <div class="circle   mx-auto text-xs ">
-                            <span>50%</span>
+                            <span>80%</span>
                         </div>
                     </div>
                 </div>
@@ -176,17 +171,18 @@
                         </div>
 
                         <div class="circle   mx-auto text-xs text-dark">
-                            <span>50%</span>
+                            <span>70%</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <hr>
         <!-- TABLE SECTION -->
-        <div class="card">
-
+        <span class="text-md" style="color: #000000;"><i class="fas fa-list"></i> Student List</span>
+        <div class="card mt-2">
             <table class="table table-bordered table-hovered ">
-                <thead class="bg-dark">
+                <thead class="">
                     <tr>
                         <th>Roll No</th>
                         <th>Name</th>

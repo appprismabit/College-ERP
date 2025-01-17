@@ -81,13 +81,13 @@
 
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="row">
+                                        <div class="row text-xs">
                                             <div class="col-12 col-md-2">
                                                 <a href="#attendance_list" data-toggle="collapse" style="text-decoration: none; color: black;">
                                                     <div class="card shadow-lg text-center card-outline card-dark p-2">
 
                                                         <!-- Text below the image -->
-                                                        <span class="text-sm ">Manage Attendance</span>
+                                                        <span class=" ">Manage Attendance</span>
 
                                                     </div>
                                                 </a>
@@ -144,7 +144,8 @@
     <script src="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/jspdf/js/jspdf.umd.min.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/html2canvas/js/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/js/bootstrap-switch.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+   
     <script>
         $("[data-bootstrap-switch]").bootstrapSwitch();
     </script>

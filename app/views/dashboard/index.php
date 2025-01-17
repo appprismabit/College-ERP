@@ -63,7 +63,7 @@
                     <div class="container-fluid">
                         <div class="card">
                             <div class="card-body">
-                                <div class="row">
+                                <div class="row text-xs">
 
                                     <div class="col-sm-6">
                                         <h1 class="m-0"> Welcome Admin!</h1>

@@ -155,7 +155,7 @@
                             <!-- /.col -->
                             <div class="col-md-9">
                                 <div class="card">
-                                    <div class="card-header p-2 text-sm">
+                                    <div class="card-header p-2 text-xs">
                                         <ul class="nav nav-pills">
                                             <li class="nav-item"><a class="nav-link active" href="#basic_info" data-bs-toggle="tab">Basic Info</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#attendance" data-bs-toggle="tab">Attendance</a></li>
@@ -168,7 +168,7 @@
                                     </div><!-- /.card-header -->
                                     <div class="card-body ">
                                         <!-- BASIC INFO -->
-                                        <div class="tab-content ">
+                                        <div class="tab-content text-xs">
                                             <div class="active tab-pane" id="basic_info">
                                                 <div class="card">
                                                     <div class="card-body text-xs">
@@ -197,27 +197,22 @@
                                             <!-- ATTENDANCE -->
                                             <div class="tab-pane" id="attendance">
                                                 <div class="card-header">
-                                                    <div class="row">
+                                                    <div class="row text-xs">
+                                                        <div class="col-12 col-md-12 ">
+                                                            <!-- <label>Attandance Month: <span>June</span></label> -->
 
-                                                        <div class="col-md-6">
-                                                            <label>Select Financial Year</label>
-                                                            <select class="form-control">
-                                                                <option>Select Financial Year</option>
-                                                                <option>2022-23</option>
-                                                                <option>2024-25</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <label>&nbsp;</label>
-                                                            <button type="button" class="btn btn-outline-primary form-control" onclick="getAttendanceDetailsByFinYear();"><i class="fa fa-search"></i> Get Attendance</button>
-                                                        </div>
-                                                        <div class="col-md-2">
-                                                            <label>&nbsp;</label>
-                                                            <button type="button" class="btn btn-outline-danger form-control" onclick="resetAttendanceDetailsByFinYear();"><i class="fa fa-sync"></i> Reset</button>
+                                                            <div class="float-right">
+                                                                <label>Select Financial Year </label>
+                                                                <select class="p-2 mr-2" style="border-radius: 50px;">
+                                                                    <option>2023-24</option>
+                                                                    <option>2024-25</option>
+                                                                    <option>2025-26</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="card-body " id="attendaceDetails" style="display: none;">
+                                                <div class="card-body " id="attendaceDetails">
                                                     <section class="content">
                                                         <div class="container-fluid">
                                                             <div class="row">

@@ -56,7 +56,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <h4 class="m-0"><i class="fas fa-money-bill-wave me-2"></i> Manage Fees</h4>
+                                      <i class="fas fa-money-bill-wave me-2"></i> Manage Fees
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
 

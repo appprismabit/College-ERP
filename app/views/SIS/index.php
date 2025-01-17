@@ -39,7 +39,7 @@
         <div class="loader-overlay">
             <div class="loader"></div>
         </div>
-        <div class="wrapper">
+        <div class="wrapper text-sm">
             <!-- Navbar -->
             <?php include BASE_PATH . '/layout/header.php'; ?>
             <!-- /.navbar -->
@@ -55,7 +55,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-sm-6" style="color : black">
+                                    <div class="col-sm-6">
                                         <i class="fas fa-pen fa-sm"></i> Student Information System
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
@@ -86,7 +86,7 @@
                                                             <span class="text-primary text-bold">5,400.00</span>
                                                         </div>
                                                         <!-- Text below the image -->
-                                                        <span class="mt-3 text-sm ">Student List</span>
+                                                        <span class="mt-3 text-xs ">Student List</span>
                                                     </div>
                                                 </a>
                                             </div>

@@ -1,100 +1,104 @@
 <div class="col-md-12 collapse" id="student_list" data-parent="#accordion">
     <div class="card text-left">
-        <div class="card-header">
-            <div class="row">
-                <div class="col-12 col-md-3">
-                    <label>Select Department</label>
-                    <select class="form-control" id="department" name="department">
-                        <option>Department 1</option>
-                        <option>Department 2</option>
-                        <option>Department 3</option>
-                        <option>Department 4</option>
-                        <option>Department 5</option>
-                        <option>Department 6</option>
-                    </select>
-                </div>
-                <div class="col-12 col-md-3">
-                    <label>Select Course</label>
-                    <select class="form-control" id="department" name="department">
-                        <option>All</option>
-                        <option>MCA</option>
-                        <option>BCA</option>
+        <div class="card-body">
+            <div class="row text-xs">
+                <div class="col-12 col-md-12">
+                <label class="text-md"><i class="fa fa-search"></i></label>
+                    <div class="float-right">
+                        
 
-                    </select>
+                        <label>Semester</label>
+                        <select class="p-2 mr-2" style="border-radius: 50px;">
+                            <option>1st</option>
+                            <option>2nd</option>
+                            <option>3rd</option>
+                            <option>4th</option>
+                        </select>
+                        <label>Course</label>
+                        <select class="p-2" style="border-radius: 50px;" onchange="getStudentList();">
+                            <option>MCA</option>
+                            <option>BCA</option>
+                            <option>MBA</option>
+                            <option>BBA</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-12 col-md-3">
-                    <label>Batch</label>
-                    <select class="form-control" id="department" name="department">
-                        <option>2024</option>
-                        <option>2025</option>
-                        <option>2026</option>
 
-                    </select>
-                </div>
-                <div class="col-12 col-md-3">
-                    <label>&nbsp;</label>
-                    <button type="button" class="btn btn-primary form-control">Submit </button>
-                </div>
+
+
 
             </div>
 
         </div>
+    </div>
 
-        <div class="card-body">
-            <table class="table table-bordered table-hovered">
-                <thead class="bg-dark">
-                    <tr>
-                        <th>Enrollment Number</th>
-                        <th>Roll No</th>
-                        <th>Name</th>
-                        <th>Gender</th>
-                        <th>Course</th>
-                        <th>Semester</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>9868637</td>
-                        <td>2025/mca/009</td>
-                        <td>Mir Kashem Ali </td>
-                        <td>Male</td>
-                        <td>MCA</td>
-                        <td>Semester 1</td>
-                        <td><a href="<?php echo BASE_URL; ?>/sis/student_single" class="btn btn-info btn-sm">Profile</a></td>
-                    </tr>
-                    <tr>
-                        <td>9862337</td>
-                        <td>2025/mca/019</td>
-                        <td>Alakesh Gogoi </td>
-                        <td>Female</td>
-                        <td>MCA</td>
-                        <td>Semester 1</td>
-                        <td><a href="<?php echo BASE_URL; ?>/sis/student_single" class="btn btn-info btn-sm">Profile</a></td>
-                    </tr>
-                    <tr>
-                        <td>9868637</td>
-                        <td>2025/mca/009</td>
-                        <td>Kabyashree Buragohain </td>
-                        <td>Female</td>
-                        <td>MCA</td>
-                        <td>Semester 1</td>
-                        <td><a href="<?php echo BASE_URL; ?>/sis/student_single" class="btn btn-info btn-sm">Profile</a></td>
-                    </tr>
-                    <tr>
-                        <td>9868637</td>
-                        <td>2025/mca/009</td>
-                        <td>Himasree Das</td>
-                        <td>Male</td>
-                        <td>MCA</td>
-                        <td>Semester 1</td>
-                        <td><a href="<?php echo BASE_URL; ?>/sis/student_single" class="btn btn-info btn-sm">Profile</a></td>
-                    </tr>
-                </tbody>
+    <div class="card text-xs" id="studentList" style="display: none;">
+        <table class="table table-bordered table-hovered">
+            <thead class="">
+                <tr>
+                    <th>Enrollment Number</th>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>Semester</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9868637</td>
+                    <td>2025/mca/009</td>
+                    <td><img class="profile-user-img img-fluid img-circle"
+                                src="<?php echo BASE_URL; ?>/dist/img/avatar4.png"
+                                alt="User profile picture" style="height: 40px; width: 40px;"> Mir Kashem Ali </td>
+                    <td>Male</td>
+                    <td>MCA</td>
+                    <td>Semester 1</td>
+                    <td><a href="<?php echo BASE_URL; ?>/sis/student_single" class="btn btn-info btn-sm">Profile</a></td>
+                </tr>
+                <tr>
+                    <td>9862337</td>
+                    <td>2025/mca/019</td>
+                    <td><img class="profile-user-img img-fluid img-circle"
+                                src="<?php echo BASE_URL; ?>/dist/img/avatar5.png"
+                                alt="User profile picture" style="height: 40px; width: 40px;"> Alakesh Gogoi </td>
+                    <td>Female</td>
+                    <td>MCA</td>
+                    <td>Semester 1</td>
+                    <td><a href="<?php echo BASE_URL; ?>/sis/student_single" class="btn btn-info btn-sm">Profile</a></td>
+                </tr>
+                <tr>
+                    <td>9868637</td>
+                    <td>2025/mca/009</td>
+                    <td><img class="profile-user-img img-fluid img-circle"
+                                src="<?php echo BASE_URL; ?>/dist/img/avatar2.png"
+                                alt="User profile picture" style="height: 40px; width: 40px;"> Kabyashree Buragohain </td>
+                    <td>Female</td>
+                    <td>MCA</td>
+                    <td>Semester 1</td>
+                    <td><a href="<?php echo BASE_URL; ?>/sis/student_single" class="btn btn-info btn-sm">Profile</a></td>
+                </tr>
+                <tr>
+                    <td>9868637</td>
+                    <td>2025/mca/009</td>
+                    <td><img class="profile-user-img img-fluid img-circle"
+                                src="<?php echo BASE_URL; ?>/dist/img/avatar.png"
+                                alt="User profile picture" style="height: 40px; width: 40px;"> Himasree Das</td>
+                    <td>Male</td>
+                    <td>MCA</td>
+                    <td>Semester 1</td>
+                    <td><a href="<?php echo BASE_URL; ?>/sis/student_single" class="btn btn-info btn-sm">Profile</a></td>
+                </tr>
+            </tbody>
 
 
-            </table>
+        </table>
 
-        </div>
     </div>
 </div>
+<script>
+    function getStudentList(){
+        $('#studentList').show();
+    }
+</script>
