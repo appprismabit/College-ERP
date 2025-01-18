@@ -3,9 +3,9 @@
         <div class="card-body">
             <div class="row text-xs">
                 <div class="col-12 col-md-12">
-                <label class="text-md"><i class="fa fa-search"></i></label>
+                    <label class="text-md"><i class="fa fa-search"></i></label>
                     <div class="float-right">
-                        
+
 
                         <label>Semester</label>
                         <select class="p-2 mr-2" style="border-radius: 50px;">
@@ -23,16 +23,10 @@
                         </select>
                     </div>
                 </div>
-
-
-
-
             </div>
-
         </div>
     </div>
-
-    <div class="card text-xs" id="studentList" style="display: none;">
+    <div class="card text-xs" id="studentList">
         <table class="table table-bordered table-hovered">
             <thead class="">
                 <tr>
@@ -50,8 +44,8 @@
                     <td>9868637</td>
                     <td>2025/mca/009</td>
                     <td><img class="profile-user-img img-fluid img-circle"
-                                src="<?php echo BASE_URL; ?>/dist/img/avatar4.png"
-                                alt="User profile picture" style="height: 40px; width: 40px;"> Mir Kashem Ali </td>
+                            src="<?php echo BASE_URL; ?>/dist/img/avatar4.png"
+                            alt="User profile picture" style="height: 40px; width: 40px;"> Mir Kashem Ali </td>
                     <td>Male</td>
                     <td>MCA</td>
                     <td>Semester 1</td>
@@ -61,8 +55,8 @@
                     <td>9862337</td>
                     <td>2025/mca/019</td>
                     <td><img class="profile-user-img img-fluid img-circle"
-                                src="<?php echo BASE_URL; ?>/dist/img/avatar5.png"
-                                alt="User profile picture" style="height: 40px; width: 40px;"> Alakesh Gogoi </td>
+                            src="<?php echo BASE_URL; ?>/dist/img/avatar5.png"
+                            alt="User profile picture" style="height: 40px; width: 40px;"> Alakesh Gogoi </td>
                     <td>Female</td>
                     <td>MCA</td>
                     <td>Semester 1</td>
@@ -72,8 +66,8 @@
                     <td>9868637</td>
                     <td>2025/mca/009</td>
                     <td><img class="profile-user-img img-fluid img-circle"
-                                src="<?php echo BASE_URL; ?>/dist/img/avatar2.png"
-                                alt="User profile picture" style="height: 40px; width: 40px;"> Kabyashree Buragohain </td>
+                            src="<?php echo BASE_URL; ?>/dist/img/avatar2.png"
+                            alt="User profile picture" style="height: 40px; width: 40px;"> Kabyashree Buragohain </td>
                     <td>Female</td>
                     <td>MCA</td>
                     <td>Semester 1</td>
@@ -83,8 +77,8 @@
                     <td>9868637</td>
                     <td>2025/mca/009</td>
                     <td><img class="profile-user-img img-fluid img-circle"
-                                src="<?php echo BASE_URL; ?>/dist/img/avatar.png"
-                                alt="User profile picture" style="height: 40px; width: 40px;"> Himasree Das</td>
+                            src="<?php echo BASE_URL; ?>/dist/img/avatar.png"
+                            alt="User profile picture" style="height: 40px; width: 40px;"> Himasree Das</td>
                     <td>Male</td>
                     <td>MCA</td>
                     <td>Semester 1</td>
@@ -98,7 +92,7 @@
     </div>
 </div>
 <script>
-    function getStudentList(){
+    function getStudentList() {
         $('#studentList').show();
     }
 </script>

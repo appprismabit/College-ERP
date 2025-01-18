@@ -1,24 +1,28 @@
-<div class="col-md-12 collapse" id="collectFee" data-parent="#accordion">
+<div class="col-md-12 collapse text-xs" id="collectFee" data-parent="#accordion">
     <div class="card">
         <div class="card-header">
-            <div class="row form-group align-items-center">
-                <div class="col-md-12">
-                    <div class="text-md text-uppercase text-green">
+            <div class="row form-group ">
+                <div class="col-md-3">
+                    <div class="text-sm text-uppercase text-green">
                         <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Collect Fee of Student
                     </div>
-                    <hr>
+
                 </div>
 
 
-                <div class="col-md-8 ">
-                    <input type="text" class="form-control" placeholder="Enter Enrollment Number Here">
+                <div class="col-md-4 text-xs">
+                    <label>Enter Enrollment Number</label>
+                    <input type="text" class="form-control text-xs" >
                 </div>
                 <div class="col-md-3">
-                    <button type="button" class="form-control btn btn-outline-primary btn-sm" onclick="searchBtn();"> <i class="fa fa-search" aria-hidden="true"></i> Search</button>
+                    <label>&nbsp;</label>
+                    <button type="button" class="form-control btn btn-outline-primary btn-sm" onclick="searchBtn();"> <i class="fa fa-search fa-xs" aria-hidden="true"></i> Search</button>
 
                 </div>
-                <div class="col-md-1">
-                    <button type="button" class="form-control btn btn-outline-danger btn-xs" onclick="resetSearch();"> <i class="fa fa-refresh" aria-hidden="true"></i> Reset</button>
+                <div class="col-md-2">
+                    <label>&nbsp;</label>
+
+                    <button type="button" class="form-control btn btn-outline-danger btn-sm" onclick="resetSearch();"> <i class="fa fa-arrow-rotate-right"></i> Reset</button>
 
                 </div>
             </div>

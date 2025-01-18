@@ -1,55 +1,52 @@
-<div class="col-md-12 collapse" id="feeDetails" data-parent="#accordion">
+<div class="col-md-12 collapse text-xs" id="feeDetails" data-parent="#accordion">
     <div class="card">
-        <div class="card-header text-uppercase">
-            <div class="text-md text-uppercase text-info">
+        <div class="card-header">
+
+            <div class="text-xs text-uppercase">
                 <i class="fa fa-coins" aria-hidden="true"></i> Fee Collected Today Dated : 15-01-2025
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-12 col-md-3">
-                    <div class="form-group">
-                        <label for="courseSelect">Course</label>
-                        <select class="form-control" id="courseSelect">
-                            <option>Select Course</option>
-                            <option value="Course 1">Course 1</option>
-                            <option value="Course 2">Course 2</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="form-group">
-                        <label for="dateSelect">Semester</label>
-                        <select class="form-control" id="dateSelect">
-                            <option>Selester</option>
-                            <option value="Course 1">All</option>
-                            <option value="Course 2">Semester 1</option>
-                            <option value="Course 2">Semester 2</option>
-                            <option value="Course 2">Semester 3</option>
-                        </select>
-                    </div>
+                <div class="float-right">
 
-                </div>
+                    <label for="courseSelect">Course</label>
+                    <select class="p-2 ml-1" id="courseSelect" style="border-radius:30px;">
+                        <option>Select Course</option>
+                        <option value="Course 1">Course 1</option>
+                        <option value="Course 2">Course 2</option>
+                    </select>
 
-                <div class="col-12 col-md-3">
-                    <div class="form-group">
-                        <label for="dateSelect">Batch</label>
-                        <select class="form-control" id="dateSelect">
-                            <option>Year</option>
-                            <option value="Course 1">2024</option>
-                            <option value="Course 2">2025</option>
-                        </select>
-                    </div>
 
-                </div>
+                    <label for="dateSelect">Semester </label>
+                    <select class="p-2 ml-1" id="dateSelect" style="border-radius:30px;">
+                        <option>Selester</option>
+                        <option value="Course 1">All</option>
+                        <option value="Course 2">Semester 1</option>
+                        <option value="Course 2">Semester 2</option>
+                        <option value="Course 2">Semester 3</option>
+                    </select>
 
-                <div class="col-12 col-md-3">
-                    <div class="form-group">
-                        <label>&nbsp;</label>
-                        <button type="button" class="btn btn-success btn-sm p-2 form-control" onclick="getStudent();"><i class="fas fa-search"></i> Get Details</button>
-                    </div>
+
+                    <label for="dateSelect">Batch</label>
+                    <select class="p-2 ml-1" id="dateSelect" style="border-radius:30px;">
+                        <option>Year</option>
+                        <option value="Course 1">2024</option>
+                        <option value="Course 2">2025</option>
+                    </select>
+
+
+
 
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
         </div>
 
         <div class="card-body p-4 text-sm">

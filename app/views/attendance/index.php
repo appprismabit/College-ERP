@@ -85,10 +85,8 @@
                                             <div class="col-12 col-md-2">
                                                 <a href="#attendance_list" data-toggle="collapse" style="text-decoration: none; color: black;">
                                                     <div class="card shadow-lg text-center card-outline card-dark p-2">
-
                                                         <!-- Text below the image -->
                                                         <span class=" ">Manage Attendance</span>
-
                                                     </div>
                                                 </a>
                                             </div>
@@ -100,7 +98,6 @@
                         <div id="accordion">
                             <!-- STUDENT LIST -->
                             <?php include BASE_PATH . '/attendance/attendance_list.php'; ?>
-
                         </div>
                     </div>
                 </section>
@@ -108,7 +105,6 @@
             </div>
             <!-- /.content-wrapper -->
             <?php include BASE_PATH . '/layout/footer.php'; ?>
-
         </div>
     </div>
     <script>
@@ -120,8 +116,6 @@
     <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="<?php echo BASE_URL; ?>/plugins/popper/umd/popper.min.js"></script>
-
-
     <!-- ChartJS -->
     <script src="<?php echo BASE_URL; ?>/plugins/chart.js/Chart.min.js"></script>
     <!-- Sparkline -->

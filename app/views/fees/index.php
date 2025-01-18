@@ -56,7 +56,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                      <i class="fas fa-money-bill-wave me-2"></i> Manage Fees
+                                        <i class="fas fa-money-bill-wave me-2"></i> Manage Fees
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
 
@@ -79,7 +79,7 @@
                             <div class="col-12 col-md-12 mx-auto text-xs">
                                 <div class="card p-3">
                                     <div class="card-body">
-                                        <div class="row">
+                                        <div class="row text-xs">
                                             <div class="col-2">
                                                 <a href="#feeDetails" data-toggle="collapse" style="text-decoration: none; color: black;">
                                                     <div class="card shadow-lg text-center p-2 card-outline card-danger">
@@ -90,7 +90,7 @@
                                                         </div>
                                                         <!-- Text below the image -->
 
-                                                        <span class="mt-3 text-sm ">Fees Pending</span>
+                                                        <span class="mt-3 ">Fees Pending</span>
 
                                                     </div>
                                                 </a>
@@ -102,7 +102,7 @@
                                                             <span class="text-green text-bold">5,40,000.00 </span>
                                                         </div>
                                                         <!-- Text below the image -->
-                                                        <span class="mt-3 text-sm ">Fees Paid</span>
+                                                        <span class="mt-3">Fees Paid</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -113,7 +113,7 @@
                                                             <span class="text-green text-bold">5,40,000.00 </span>
                                                         </div>
                                                         <!-- Text below the image -->
-                                                        <span class="mt-3 text-sm ">Collection Today</span>
+                                                        <span class="mt-3  ">Collection Today</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -124,7 +124,7 @@
                                                             <span class="text-green text-bold"> <i class="fa fa-plus" aria-hidden="true"></i></span>
                                                         </div>
                                                         <!-- Text below the image -->
-                                                        <span class="mt-3 text-sm ">Collect Fee</span>
+                                                        <span class="mt-3 ">Collect Fee</span>
                                                     </div>
                                                 </a>
                                             </div>
