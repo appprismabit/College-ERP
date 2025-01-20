@@ -26,18 +26,14 @@
     <!-- Toastr -->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/toastr/toastr.css">
-
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/select2/css/select2.min.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/custom/css/ol.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/loaders/loader-progress.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/css/style.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/bs-stepper/css/bs-stepper.min.css">
-
 </head>
 
-
 <body>
-
     <div class="hold-transition sidebar-mini sidebar-collapse">
         <div class="loader-overlay">
             <div class="loader"></div>
@@ -80,18 +76,15 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
-
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="row">
-
                                             <div class="col-12 col-md-3">
                                                 <a href="#overDueBooks" data-toggle="collapse" style="text-decoration: none; color: black;">
                                                     <div class="card shadow-lg text-center card-outline card-primary p-2">
                                                         <span class="text-lg">900</span>
                                                         <!-- Text below the image -->
                                                         <span class="text-xs mt-2">Overdue Books</span>
-
                                                     </div>
                                                 </a>
                                             </div>
@@ -100,11 +93,9 @@
                                 </div>
                             </div><!-- /.container-fluid -->
                         </div>
-
                         <div id="accordion">
                             <!-- STUDENT LIST -->
                             <?php include BASE_PATH . '/library/overdue_books.php'; ?>
-
                         </div>
                         <div class="row">
                             <div class="col-6">
@@ -144,9 +135,7 @@
                                             <tfoot>
                                             </tfoot>
                                         </table>
-
                                     </div>
-
                                 </div>
                             </div>
                             <div class="col-6">
@@ -156,14 +145,12 @@
                                             <span class="text-sm">Book List</span>
                                             <button class="btn btn-outline-info btn-sm  text-xs" style="border-radius: 8px;"><span class="text-xs">Add new Book</span></button>
                                         </div>
-
                                         <table class="table text-xs mt-2">
                                             <tr>
                                                 <th>Book ID</th>
                                                 <th>Title</th>
                                                 <th>Author</th>
                                                 <th>Available</th>
-
                                             </tr>
                                             <tbody>
                                                 <tr>
@@ -171,101 +158,65 @@
                                                     <td>Ancestor Trouble</td>
                                                     <td>Maud Newton</td>
                                                     <td>30</td>
-
                                                 </tr>
                                                 <tr>
                                                     <td>100022</td>
                                                     <td>Life is Everywhere</td>
                                                     <td>Lucy lves</td>
                                                     <td>23</td>
-
                                                 </tr>
                                                 <tr>
                                                     <td>100022</td>
                                                     <td>Stroller</td>
                                                     <td>Amanda Parrish</td>
                                                     <td>90</td>
-
                                                 </tr>
                                             </tbody>
                                             <tfoot>
-
                                             </tfoot>
                                         </table>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-
                         <div class="card">
-                            <div class="card-body ">
+                            <div class="card-body">
                                 <span class="text-sm">Top Choices</span>
                                 <div class="row">
-
                                     <div class="col-md-2 mt-2 col-sm-3">
-
                                         <img src="<?php echo BASE_URL ?>/img/books/Book1.jpg" alt="Book Image" height="150px" width="150px" style=" border-radius: 20px;">
-
                                         <div class="mt-2 text-xs">Title of the Book</div>
                                     </div>
                                     <div class="col-md-2 mt-2">
-
                                         <img src="<?php echo BASE_URL ?>/img/books/Book2.jpg" alt="Book Image" height="150px" width="150px" style=" border-radius: 20px;">
-
                                         <div class="mt-2 text-xs">Title of the Book</div>
                                     </div>
                                     <div class="col-md-2 mt-2">
-
                                         <img src="<?php echo BASE_URL ?>/img/books/OIP.jpg" alt="Book Image" height="150px" width="150px" style=" border-radius: 20px;">
-
                                         <div class="mt-2 text-xs">Title of the Book</div>
                                     </div>
                                     <div class="col-md-2 mt-2">
-
                                         <img src="<?php echo BASE_URL ?>/img/books/Book3.jpg" alt="Book Image" height="150px" width="150px" style=" border-radius: 20px;">
-
                                         <div class="mt-2 text-xs">Title of the Book</div>
                                     </div>
                                     <div class="col-md-2 mt-2">
-
                                         <img src="<?php echo BASE_URL ?>/img/books/Book1.jpg" alt="Book Image" height="150px" width="150px" style=" border-radius: 20px;">
-
                                         <div class="mt-2 text-xs">Title of the Book</div>
                                     </div>
                                     <div class="col-md-2 mt-2">
-
                                         <img src="<?php echo BASE_URL ?>/img/books/Book1.jpg" alt="Book Image" height="150px" width="150px" style=" border-radius: 20px;">
-
                                         <div class="mt-2 text-xs">Title of the Book</div>
                                     </div>
-
-
                                 </div>
-
-
-
                             </div>
                         </div>
-
-
-
-
-
-
-
-
                     </div>
-
-
-
             </div>
             </section>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
         <?php include BASE_PATH . '/layout/footer.php'; ?>
-
     </div>
     </div>
     <script>
@@ -275,10 +226,7 @@
     <script src="<?php echo BASE_URL; ?>/plugins/jquery-ui/jquery-ui.min.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="<?php echo BASE_URL; ?>/plugins/popper/umd/popper.min.js"></script>
-
-
     <!-- ChartJS -->
     <script src="<?php echo BASE_URL; ?>/plugins/chart.js/Chart.min.js"></script>
     <!-- Sparkline -->
@@ -310,7 +258,6 @@
             window.stepper = new Stepper(document.querySelector('.bs-stepper'))
         })
     </script>
-
 </body>
 
 </html>

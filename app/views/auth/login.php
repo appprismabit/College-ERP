@@ -41,12 +41,10 @@ $_SESSION['user_id'] = 1;
                             </div>
                             <div class="col-md-3" style="text-align:right">
                                 <img class="img img-responsive" width="80px" src="<?php echo BASE_URL; ?>/img/demologo.png">
-
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="card text-left">
                     <div class="card-body">
                         <div class="row">
@@ -93,31 +91,25 @@ $_SESSION['user_id'] = 1;
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-
     <!-- Main Footer -->
     <footer class="main-footer bg-dark">
         <strong>Powered By <a href="#"></a>.</strong> All rights reserved.
     </footer>
     </div>
     <!-- ./wrapper -->
-
     <!-- REQUIRED SCRIPTS -->
-
     <!-- jQuery -->
     <script src="<?php echo BASE_URL; ?>/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="<?php echo BASE_URL; ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="<?php echo BASE_URL; ?>/dist/js/adminlte.min.js"></script>
-
     <script>
         $(document).ready(function() {
             $('#loginForm').submit(function(event) {
                 $('.spinner-border').show();
                 $('.btn-primary').hide();
                 event.preventDefault();
-
-
                 var username = $('#username').val();
                 var password = $('#password').val();
                 var captcha = $('#captcha').val();
@@ -129,9 +121,6 @@ $_SESSION['user_id'] = 1;
                 } else {
                     $('#error-msg').text('Invalid username or password').show();
                 }
-
-
-
             });
         });
         $(document).on("mousedown", function() {
@@ -142,5 +131,3 @@ $_SESSION['user_id'] = 1;
 </body>
 
 </html>
-
-Mir Kashem Ali 

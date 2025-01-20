@@ -12,18 +12,15 @@
 
                 <div class="col-md-4 text-xs">
                     <label>Enter Enrollment Number</label>
-                    <input type="text" class="form-control text-xs" >
+                    <input type="text" class="form-control text-xs">
                 </div>
                 <div class="col-md-3">
                     <label>&nbsp;</label>
                     <button type="button" class="form-control btn btn-outline-primary btn-sm" onclick="searchBtn();"> <i class="fa fa-search fa-xs" aria-hidden="true"></i> Search</button>
-
                 </div>
                 <div class="col-md-2">
                     <label>&nbsp;</label>
-
                     <button type="button" class="form-control btn btn-outline-danger btn-sm" onclick="resetSearch();"> <i class="fa fa-arrow-rotate-right"></i> Reset</button>
-
                 </div>
             </div>
         </div>
@@ -38,7 +35,6 @@
                                     Due
                                 </div>
                             </div>
-
                             <div class=" d-flex">
                                 <!-- Image on the left -->
                                 <div class="col-2">
@@ -53,7 +49,6 @@
                                     Gender: <span class="text-bold">Male</span><br>
                                     Father Name: <span class="text-bold">Samsul Hoque</span><br>
                                     Mother Name: <span class="text-bold">Moshira Begum</span><br>
-
                                 </div>
                                 <div class="col-5">
                                     Semester: <span class="text-bold">1st</span><br>
@@ -63,12 +58,8 @@
                                     Address: <span class="text-bold">xyz</span><br>
 
                                     Cast: <span class="text-bold">General</span><br>
-
-
                                 </div>
                             </div>
-
-
                             <div class="row">
                                 <div class="col-12 text-center text-dark">
                                     <span class="text-md">Student Payment Details</span>
@@ -87,8 +78,6 @@
                                             <th>Amount Paid</th>
                                             <th>Discount(%)</th>
                                             <th>Amount Due</th>
-
-
                                         </tr>
                                         <tbody>
                                             <tr>
@@ -114,7 +103,6 @@
                                                 <td>4000</td>
                                                 <td>50%</td>
                                                 <td>1000</td>
-
                                             </tr>
                                             <tr>
                                                 <td>4</td>
@@ -133,7 +121,6 @@
                                             </tr>
                                             <tr>
                                                 <th colspan="5" class="text-right">Already Paid
-
                                                 </th>
                                                 <th>20000</th>
                                             </tr>
@@ -147,7 +134,6 @@
                                                     <input type="date" class="form-control">
                                                 </th>
                                                 <th>
-
                                                     <select class="form-control" name="" id="">
                                                         <option>--Select Payment Method---</option>
                                                         <option>Cash</option>
@@ -155,7 +141,6 @@
                                                         <option>UPI</option>
                                                         <option>Account Transfer</option>
                                                     </select>
-
                                                 </th>
                                                 <th>
                                                     <input type="text" class="form-control" placeholder="Ref No if any...">
@@ -165,10 +150,8 @@
                                                 </th>
                                             </tr>
                                         </tfoot>
-
                                     </table>
                                     <br>
-
                                     <button type="button" data-toggle="modal" data-target="#modal-xl" class="btn btn-primary btn-sm float-right"> <i class="fa fa-arrow-down" aria-hidden="true"></i> Collect Payment</button>
                                 </div>
                                 <!-- model -->
@@ -216,11 +199,9 @@
                                     </tr>
                                 </tbody>
                             </table>
-
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

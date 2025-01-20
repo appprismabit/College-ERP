@@ -38,18 +38,17 @@
 
 
 </head>
-
 <body>
-
     <div class="hold-transition sidebar-mini sidebar-collapse">
+        <div class="loader-overlay">
+            <div class="loader"></div>
+        </div>
         <div class="wrapper text-sm">
             <!-- Navbar -->
             <?php include BASE_PATH . '/layout/header.php'; ?>
             <!-- /.navbar -->
-
             <!-- Main Sidebar Container -->
             <?php include BASE_PATH . '/layout/aside.php'; ?>
-
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
@@ -62,7 +61,6 @@
                                         <i class="fas fa-book me-2"></i> Course Details
                                     </div><!-- /.col -->
                                     <div class="col-sm-6">
-
                                         <ol class="breadcrumb float-sm-right">
                                             <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>/dashboard/index">Home</a></li>
                                             <li class="breadcrumb-item active"><a href="<?php echo BASE_URL; ?>/dashboard/index">Course</a></li>
@@ -71,19 +69,15 @@
                                 </div>
                             </div><!-- /.row -->
                         </div><!-- /.container-fluid -->
-                    
                     </div>
-
                 </div>
                 <!-- /.content-header -->
-
                 <!-- Main content -->
                 <section class="content">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-8">
                                 <div class="card text-sm">
-
                                     <div class="card-body">
                                         <div class="row text-xs">
 
@@ -96,13 +90,9 @@
 
                                                         </div>
                                                         <!-- Text below the image -->
-
                                                         <span class="mt-3 ">MCA</span>
-
                                                     </div>
                                                 </a>
-
-
                                             </div>
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
                                                 <a href="<?php echo BASE_URL; ?>/course/course_single" style="text-decoration: none; color: black;">
@@ -110,16 +100,11 @@
                                                         <!-- Image first -->
                                                         <div>
                                                             <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/computer-icon.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="BCA">
-
                                                         </div>
                                                         <!-- Text below the image -->
-
                                                         <span class="mt-3">BCA</span>
-
                                                     </div>
                                                 </a>
-
-
                                             </div>
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
                                                 <a href="<?php echo BASE_URL; ?>/course/course_single" style="text-decoration: none; color: black;">
@@ -127,24 +112,15 @@
                                                         <!-- Image first -->
                                                         <div>
                                                             <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/MBA.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="MBA">
-
                                                         </div>
                                                         <!-- Text below the image -->
-
                                                         <span class="mt-3">MBA</span>
-
                                                     </div>
                                                 </a>
-
-
                                             </div>
-
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
                             <div class="col-md-4">
                                 <div class="card card-outline card-success text-sm">
@@ -169,21 +145,13 @@
                                                 <label>Enter Number of Semesters</label>
                                                 <input type="number" id="title_faculty" class="form-control" placeholder="Number of semester">
                                             </div>
-
-
-
-
                                             <div class="col-md-12 p-1">
                                                 <button type="button" name="" id="" class="btn btn-success btn-md btn-block"> Submit</button>
                                             </div>
-
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
@@ -191,11 +159,9 @@
             </div>
             <!-- /.content-wrapper -->
             <?php include BASE_PATH . '/layout/footer.php'; ?>
-
         </div>
     </div>
     <!-- ./wrapper -->
-
     <!-- jQuery -->
     <script>
         $.widget.bridge('uibutton', $.ui.button)
@@ -223,8 +189,6 @@
     <script src="<?php echo BASE_URL; ?>/plugins/loaders/init.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/custom/custom.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.js"></script>
-
-
 </body>
 
 </html>

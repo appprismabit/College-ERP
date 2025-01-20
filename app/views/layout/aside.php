@@ -43,16 +43,104 @@
           <ul class="nav nav-treeview">
 
             <li class="nav-item">
-              <a href="<?php echo BASE_URL; ?>/user/index" class="nav-link">
-                <i class="nav-icon fas fa-users"></i>
+              <a href="<?php echo BASE_URL; ?>/sis/index" class="nav-link">
+                <i class="nav-icon fas fa-graduation-cap"></i>
                 <p>
-                  User List
+                  SIS
                 </p>
               </a>
 
           </ul>
         </li>
-        <li class="nav-item">
+        <li class="nav-item menu-open">
+
+          <ul class="nav nav-treeview">
+
+            <li class="nav-item">
+              <a href="<?php echo BASE_URL; ?>/course/index" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  Course
+                </p>
+              </a>
+
+          </ul>
+        </li>
+        <li class="nav-item menu-open">
+
+          <ul class="nav nav-treeview">
+
+            <li class="nav-item">
+              <a href="<?php echo BASE_URL; ?>/fees/index" class="nav-link">
+                <i class="nav-icon fas fa-credit-card"></i>
+                <p>
+                  Fee
+                </p>
+              </a>
+
+          </ul>
+        </li>
+        <li class="nav-item menu-open">
+
+          <ul class="nav nav-treeview">
+
+            <li class="nav-item">
+              <a href="<?php echo BASE_URL; ?>/online_admission/index" class="nav-link">
+                <i class="nav-icon fas fa-user-plus"></i>
+                <p>
+                  Admission
+                </p>
+              </a>
+
+          </ul>
+        </li>
+        <li class="nav-item menu-open">
+
+          <ul class="nav nav-treeview">
+
+            <li class="nav-item">
+              <a href="<?php echo BASE_URL; ?>/exam/index" class="nav-link">
+                <i class="nav-icon fas fa-clipboard-list"></i>
+                <p>
+                  Exam
+                </p>
+              </a>
+          </ul>
+        </li>
+        <li class="nav-item menu-open">
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?php echo BASE_URL; ?>/attendance/index" class="nav-link">
+                <i class="nav-icon fas fa-check-circle"></i>
+                <p>
+                  Attendance
+                </p>
+              </a>
+          </ul>
+        </li>
+        <li class="nav-item menu-open">
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?php echo BASE_URL; ?>/library/index" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  Library
+                </p>
+              </a>
+          </ul>
+        </li>
+        <li class="nav-item menu-open">
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="<?php echo BASE_URL; ?>/faculty/index" class="nav-link">
+                <i class="nav-icon fas fa-users"></i>
+                <p>
+                  Faculty
+                </p>
+              </a>
+          </ul>
+        </li>
+        <!-- <li class="nav-item">
           <a href="#" class="nav-link">
             <i class="nav-icon fas fa-user-check"></i>
             <p>
@@ -63,7 +151,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?php echo BASE_URL;?>/attendance/manage_attendance" class="nav-link">
+              <a href="<?php echo BASE_URL; ?>/attendance/manage_attendance" class="nav-link">
                 <i class="fas fa-angle-right nav-icon"></i>
                 <p>Manage Attendance</p>
               </a>
@@ -71,14 +159,13 @@
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?php echo BASE_URL;?>/attendance/view_attendance" class="nav-link">
+              <a href="<?php echo BASE_URL; ?>/attendance/view_attendance" class="nav-link">
                 <i class="fas fa-angle-right nav-icon"></i>
                 <p>View Attendance</p>
               </a>
             </li>
           </ul>
-        </li>
-
+        </li> -->
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
