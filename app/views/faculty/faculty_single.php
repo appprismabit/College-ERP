@@ -106,9 +106,9 @@
                                                 alt="User profile picture">
                                         </div>
 
-                                        <h3 class="profile-username text-center">Ranjan Borah</h3>
+                                        <h3 class="profile-username text-center">Faculty</h3>
 
-                                        <p class="text-muted text-center">Software Engineer</p>
+                                        <p class="text-muted text-center"></p>
 
                                         <ul class="list-group list-group-unbordered mb-3">
                                             <li class="list-group-item">
@@ -125,7 +125,7 @@
                                             </li>
                                         </ul>
 
-                                        <a href="#" class="btn btn-primary btn-block"><b>Block</b></a>
+                                       
                                     </div>
                                     <!-- /.card-body -->
                                 </div>

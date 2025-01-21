@@ -74,7 +74,14 @@
                                         <select name="" id="" class="p-2" style="width: 70%; border-radius: 10px;">
                                             <option value="">Select City</option>
                                             <option value="">Guwahati</option>
-                                            <option value="">Patna</option>
+                                            <option value="">Tezpur</option>
+                                            <option value="">Dibrugarh</option>
+                                            <option value="">Sivsagar</option>
+                                            <option value="">Jorhat</option>
+                                            <option value="">Nagaon</option>
+                                            <option value="">Haflong</option>
+                                            <option value="">Silchar</option>
+                                           
 
                                         </select>
 
@@ -91,11 +98,11 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Religion</label><br>
+                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> District</label><br>
                                         <select name="" id="" class="p-2" style="width: 70%; border-radius: 10px;">
-                                            <option value="">Select Religion</option>
-                                            <option value="">Bihari</option>
-                                            <option value="">Muslim</option>
+                                            <option value="">Select District</option>
+                                            <option value="">District 1</option>
+                                            <option value="">District 2</option>
 
                                         </select>
 
@@ -148,7 +155,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Your Image</label><br>
+                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Candidate Image</label><br>
                                         <input type="file" class="p-2 border" id="exampleInputEmail1" placeholder="Full Name" style="width: 70%; border-radius: 10px;">
                                     </div>
                                     <div class="form-group">

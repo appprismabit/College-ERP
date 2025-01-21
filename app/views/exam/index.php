@@ -32,21 +32,9 @@
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/custom/css/ol.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/loaders/loader-progress.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/plugins/css/style.css">
-
-
-
-
-    <style>
-
-    </style>
-
-
-
-
 </head>
 
 <body>
-
     <div class="hold-transition sidebar-mini sidebar-collapse">
         <div class="loader-overlay">
             <div class="loader"></div>
@@ -55,10 +43,8 @@
             <!-- Navbar -->
             <?php include BASE_PATH . '/layout/header.php'; ?>
             <!-- /.navbar -->
-
             <!-- Main Sidebar Container -->
             <?php include BASE_PATH . '/layout/aside.php'; ?>
-
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
@@ -83,14 +69,12 @@
                     </div>
                 </div>
                 <!-- /.content-header -->
-
                 <!-- Main content -->
                 <section class="content">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
-
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-8 mt-8">
@@ -99,12 +83,9 @@
                                                         <!-- Image first -->
                                                         <div>
                                                             <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/create_exam.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="Create Exam">
-
                                                         </div>
                                                         <!-- Text below the image -->
-
                                                         <span class="mt-3 text-sm ">Create Exam </span>
-
                                                     </div>
                                                 </a>
                                             </div>
@@ -114,12 +95,9 @@
                                                         <!-- Image first -->
                                                         <div>
                                                             <img class="img img-fluid feature-icon mx-auto d-block" src="<?php echo BASE_URL; ?>/img/icons/create_exam.svg" loading="lazy" style="height: 100px; width: 100px;" alt="SIS" title="Upcoming Exam">
-
                                                         </div>
                                                         <!-- Text below the image -->
-
                                                         <span class="mt-3 text-sm ">Upcoming Exam </span>
-
                                                     </div>
                                                 </a>
                                             </div>
@@ -132,9 +110,7 @@
 
                                                         </div>
                                                         <!-- Text below the image -->
-
                                                         <span class="mt-3 text-sm ">Pending Exam</span>
-
                                                     </div>
                                                 </a>
                                             </div>
@@ -170,7 +146,6 @@
                                                     <td><span class="badge bg-danger">Upcoming</span>
                                                     </td>
                                                     <td><a href="<?php echo BASE_URL; ?>/exam/exam_details_single" class="btn  btn-outline-info btn-sm">View</a> <a href="#" class="btn  btn-outline-warning btn-sm">Edit</a> <a href="#" class="btn  btn-outline-danger btn-sm">Cancel</a> </td>
-
                                                 </tr>
                                                 <tr>
                                                     <td>Maths</td>
@@ -180,7 +155,6 @@
                                                     <td><span class="badge bg-danger">Upcoming</span>
                                                     </td>
                                                     <td><a href="<?php echo BASE_URL; ?>/exam/exam_details_single" class="btn  btn-outline-info btn-sm">View</a> <a href="#" class="btn  btn-outline-warning btn-sm ">Edit</a> <a href="#" class="btn  btn-outline-danger btn-sm">Cancel</a> </td>
-
                                                 </tr>
                                                 <tr>
                                                     <td>Maths</td>
@@ -190,7 +164,6 @@
                                                     <td><span class="badge bg-warning">Ongoing</span>
                                                     </td>
                                                     <td><a href="<?php echo BASE_URL; ?>/exam/exam_details_single" class="btn  btn-outline-info btn-sm">View</a> <a href="#" class="btn  btn-outline-warning btn-sm">Edit</a> <a href="#" class="btn  btn-outline-danger btn-sm">Cancel</a> </td>
-
                                                 </tr>
                                                 <tr>
                                                     <td>Maths</td>
@@ -200,14 +173,12 @@
                                                     <td><span class="badge bg-success ">Completed</span>
                                                     </td>
                                                     <td><a href="<?php echo BASE_URL; ?>/exam/exam_details_single" class="btn  btn-outline-info btn-sm">View</a> <a href="#" class="btn  btn-outline-warning btn-sm">Edit</a> <a href="#" class="btn  btn-outline-danger btn-sm">Cancel</a> </td>
-
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
@@ -215,7 +186,6 @@
             </div>
             <!-- /.content-wrapper -->
             <?php include BASE_PATH . '/layout/footer.php'; ?>
-
         </div>
     </div>
     <script>
@@ -244,8 +214,6 @@
     <script src="<?php echo BASE_URL; ?>/plugins/loaders/init.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/custom/custom.js"></script>
     <script src="<?php echo BASE_URL; ?>/plugins/toastr/toastr.min.js"></script>
-
-
 </body>
 
 </html>

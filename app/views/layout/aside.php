@@ -94,7 +94,7 @@
 
           </ul>
         </li>
-        <li class="nav-item menu-open">
+        <!-- <li class="nav-item menu-open">
 
           <ul class="nav nav-treeview">
 
@@ -106,7 +106,7 @@
                 </p>
               </a>
           </ul>
-        </li>
+        </li> -->
         <li class="nav-item menu-open">
           <ul class="nav nav-treeview">
             <li class="nav-item">

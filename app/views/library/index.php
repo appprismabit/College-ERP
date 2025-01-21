@@ -97,13 +97,187 @@
                             <!-- STUDENT LIST -->
                             <?php include BASE_PATH . '/library/overdue_books.php'; ?>
                         </div>
+                        <!-- model start -->
+                        <div class="modal fade" id="IssueBookModel">
+                            <div class="modal-dialog modal-lg">
+
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-between">
+                                        <h4 class="modal-title">
+                                            Issue Books Form
+                                        </h4>
+
+                                    </div>
+                                    <div class="model-body">
+                                        <div class="issuebooks" style="padding: 20px;">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Library Card Number</label><br>
+                                                        <input type="text" class="p-2" id="exampleInputEmail1" style="width: 100%; border-radius: 10px;">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Name of Borrower</label><br>
+                                                        <input type="text" class="p-2" id="exampleInputEmail1" placeholder="Full Name" style="width: 100%; border-radius: 10px;">
+                                                    </div>
+
+                                                   
+
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Contact Number</label><br>
+                                                        <input type="number" class="p-2" id="exampleInputEmail1" style="width: 100%; border-radius: 10px;">
+
+
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Email Address (optional)</label><br>
+                                                        <input type="email" class="p-2" id="exampleInputEmail1" placeholder="Phone Number" style="width: 100%; border-radius: 10px;">
+                                                    </div>
+                                                 
+                                                </div>
+
+
+
+                                            </div>
+                                            <h5>Book Details</h5>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Book Title</label><br>
+                                                        <input type="text" class="p-2" id="exampleInputEmail1" placeholder="Full Name" style="width: 100%; border-radius: 10px;">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> ISBN Number</label><br>
+                                                        <input type="text" class="p-2" id="exampleInputEmail1" style="width: 100%; border-radius: 10px;">
+
+
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Date of Issue</label><br>
+                                                        <input type="date" class="p-2" id="exampleInputEmail1" style="width: 100%; border-radius: 10px;">
+
+
+                                                    </div>
+
+
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Author Name</label><br>
+                                                        <input type="email" class="p-2" id="exampleInputEmail1" placeholder="Phone Number" style="width: 100%; border-radius: 10px;">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Edition</label><br>
+                                                        <input type="text" class="p-2" id="exampleInputEmail1" style="width: 100%; border-radius: 10px;">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Due Date for Return</label><br>
+                                                        <input type="date" class="p-2" id="exampleInputEmail1" style="width: 100%; border-radius: 10px;">
+
+
+                                                    </div>
+
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-between">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <div>
+                                            <button type="button" class="btn btn-primary generate_pdf" style="margin-right: 5px;">
+                                                <i class="fas fa-download"></i> Submit
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
+                        </div>
+                        <!-- model ending -->
+
+<!-- model for add new book -->
+                        <div class="modal fade" id="addNewBook">
+                            <div class="modal-dialog modal-lg">
+
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-between">
+                                        <h4 class="modal-title">
+                                            Add New Book
+                                        </h4>
+
+                                    </div>
+                                    <div class="model-body">
+                                        <div class="issuebooks" style="padding: 20px;">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Book Title</label><br>
+                                                        <input type="text" class="p-2" id="exampleInputEmail1" placeholder="Full Name" style="width: 100%; border-radius: 10px;">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> ISBN Number</label><br>
+                                                        <input type="number" class="p-2" id="exampleInputEmail1" style="width: 100%; border-radius: 10px;">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Publisher</label><br>
+                                                        <input type="number" class="p-2" id="exampleInputEmail1" style="width: 100%; border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Author Name</label><br>
+                                                        <input type="email" class="p-2" id="exampleInputEmail1" placeholder="Phone Number" style="width: 100%; border-radius: 10px;">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Edition</label><br>
+                                                        <input type="text" class="p-2" id="exampleInputEmail1" style="width: 100%; border-radius: 10px;">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"><i class="fa fa-genderless"></i> Number of Copies</label><br>
+                                                        <input type="text" class="p-2" id="exampleInputEmail1" style="width: 100%; border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                            </div>                                          
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-between">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <div>
+                                            <button type="button" class="btn btn-primary generate_pdf" style="margin-right: 5px;">
+                                                <i class="fas fa-download"></i> Submit
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.modal-content -->
+                            </div>
+                            <!-- /.modal-dialog -->
+                        </div>
+                        <!-- model ending -->
+
+
+
                         <div class="row">
                             <div class="col-6">
                                 <div class="card" style="border-radius: 20px;">
                                     <div class="card-body">
                                         <div class=" d-flex justify-content-between">
                                             <span class="text-sm">Books Issued</span>
-                                            <button class="btn btn-outline-info btn-sm  text-xs" style="border-radius: 8px;"><span class="text-xs">Issue Books</span></button>
+                                            <button class="btn btn-outline-info btn-sm  text-xs" data-toggle="modal" data-target="#IssueBookModel" style="border-radius: 8px;"><span class="text-xs">Issue Books</span></button>
                                         </div>
                                         <table class="table text-xs mt-2">
                                             <tr>
@@ -143,7 +317,7 @@
                                     <div class="card-body">
                                         <div class=" d-flex justify-content-between">
                                             <span class="text-sm">Book List</span>
-                                            <button class="btn btn-outline-info btn-sm  text-xs" style="border-radius: 8px;"><span class="text-xs">Add new Book</span></button>
+                                            <button class="btn btn-outline-info btn-sm  text-xs" data-toggle="modal" data-target="#addNewBook" style="border-radius: 8px;"><span class="text-xs">Add new Book</span></button>
                                         </div>
                                         <table class="table text-xs mt-2">
                                             <tr>

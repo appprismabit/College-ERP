@@ -38,13 +38,7 @@
 
 
 
-    <style>
-        .card {
-            text-decoration: none;
-            color: black;
-        }
-    </style>
-
+    
 
 
 
@@ -65,7 +59,7 @@
             <?php include BASE_PATH . '/layout/aside.php'; ?>
 
             <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper">
+            <div class="content-wrapper text-md">
                 <!-- Content Header (Page header) -->
                 <div class="content-header">
                     <div class="container-fluid">
@@ -93,14 +87,14 @@
                 <!-- Main content -->
                 <section class="content">
                     <div class="container-fluid">
-                        <div class="row">
+                        <div class="row text-xs">
                             <div class="col-md-8">
                                 <div class="card">
 
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for=""></label>
-                                            <select class="form-control" name="" id="">
+                                            <select class="form-control text-xs" name="" id="">
                                                 <option>------- Select Department--------------</option>
                                                 <option>Department 1 </option>
                                                 <option>Department 2</option>

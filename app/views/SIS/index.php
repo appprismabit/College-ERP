@@ -83,7 +83,7 @@
                                                 <a href="#student_list" data-toggle="collapse" style="text-decoration: none; color: black;">
                                                     <div class="card shadow-lg text-center card-outline card-primary p-2">
                                                         <div>
-                                                            <span class="text-primary text-bold">5,400.00</span>
+                                                            <span class="text-primary text-bold">5,400</span>
                                                         </div>
                                                         <!-- Text below the image -->
                                                         <span class="mt-3 text-xs ">Student List</span>

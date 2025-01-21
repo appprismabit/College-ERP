@@ -190,7 +190,7 @@
                                         <td>01-01-2025</td>
                                         <td>10000.00</td>
                                         <td>DV22525</td>
-                                        <td> <a href="#" class="btn btn-info btn-sm"> <i class="fa fa-download" aria-hidden="true"></i></a> </td>
+                                        <td> <a href="<?php echo BASE_URL?>/img/pdf/demo_invoice.pdf" download class="btn btn-info btn-sm"> <i class="fa fa-download" aria-hidden="true"></i></a> </td>
                                     </tr>
                                     <tr>
                                         <td scope="row"></td>

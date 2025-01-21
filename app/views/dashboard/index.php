@@ -47,7 +47,7 @@
 
 <body>
 
-    <div class="hold-transition sidebar-mini sidebar-collapse">
+    <div class="hold-transition sidebar-mini sidebar-collapse text-xs">
         <div class="wrapper">
             <!-- Navbar -->
             <?php include BASE_PATH . '/layout/header.php'; ?>

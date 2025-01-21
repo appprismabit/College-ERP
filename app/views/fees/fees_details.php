@@ -36,22 +36,11 @@
 
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
         </div>
 
         <div class="card-body p-4 text-sm">
             <div class=" text-uppercase justify-content-between d-flex ">
-                <button class="btn btn-info btn-sm float-right">Download Fee Structure</button>
+                <a href="<?php echo BASE_URL?>/img/pdf/FEE STRUCTURE 23-24final.pdf" download class="btn btn-info btn-sm float-right">Download Fee Structure</a>
                 <div class="mt-2">course: <span id="attendanceFor"></span></div>
                 <div class="mt-2">batch: <span id="department"></span></div>
             </div>
@@ -67,7 +56,7 @@
                         <th>Course</th>
                         <th>Semester</th>
                         <th>Paid Amount</th>
-                        <th>Amount Break down</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
@@ -79,7 +68,7 @@
                         <td>Course 1</td>
                         <td>Semester 1 </td>
                         <td>45000</td>
-                        <td><a href="<?php echo BASE_URL; ?>/fees/fees_due_single"><button type="button" class="btn btn-info btn-sm">View</button></a></td>
+                        
                     </tr>
                 </tbody>
             </table>

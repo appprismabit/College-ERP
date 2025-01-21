@@ -17,6 +17,7 @@
                                 <th>Enrollment Number</th>
                                 <th>Name</th>
                                 <th>Book ID</th>
+                                <th>Number</th>
                                 <th>Title</th>
                                 <th>Author</th>
                                 <th>Overdue</th>
@@ -31,7 +32,8 @@
                                 <td> <img class="profile-user-img img-fluid img-circle"
                                         src="<?php echo BASE_URL; ?>/dist/img/avatar4.png"
                                         alt="User profile picture" style="height: 40px; width: 40px;"> Mir Kashem Ali</td>
-                                <td>#B-100021-30</td>
+                                        <td>#B-100021-30</td>
+                                <td>98076*****</td>
 
                                 <td>Ancestor Trouble</td>
                                 <td>Newtons
@@ -40,7 +42,7 @@
                                 </td>
                                 <td class="text-success">Returned (late)
                                 </td>
-                                <td class="text-red">BDT. 150
+                                <td class="text-red">INR. 150
                                 </td>
                             </tr>
                             <tr>
@@ -49,6 +51,7 @@
                                         src="<?php echo BASE_URL; ?>/dist/img/avatar2.png"
                                         alt="User profile picture" style="height: 40px; width: 40px;"> Kabyashree Buragohain</td>
                                 <td>#B-100021-30</td>
+                                <td>98076*****</td>
 
                                 <td>Ancestor Trouble</td>
                                 <td>Newtons
@@ -57,7 +60,7 @@
                                 </td>
                                 <td class="text-success">Returned (late)
                                 </td>
-                                <td class="text-red">BDT. 150
+                                <td class="text-red">INR. 150
                             </tr>
                             <tr>
                                 <td>2024/Mca/0016</td>
@@ -65,6 +68,7 @@
                                         src="<?php echo BASE_URL; ?>/dist/img/avatar.png"
                                         alt="User profile picture" style="height: 40px; width: 40px;"> Nilotpal Deta</td>
                                 <td>#B-100021-30</td>
+                                <td>98076*****</td>
 
                                 <td>Ancestor Trouble</td>
                                 <td>Newtons
@@ -81,6 +85,7 @@
                                         src="<?php echo BASE_URL; ?>/dist/img/avatar5.png"
                                         alt="User profile picture" style="height: 40px; width: 40px;"> Alakesh Gogoi</td>
                                 <td>#B-100021-30</td>
+                                <td>98076*****</td>
 
                                 <td>Ancestor Trouble</td>
                                 <td>Newtons
@@ -89,7 +94,7 @@
                                 </td>
                                 <td class="text-red">Delay
                                 </td>
-                                <td class="text-red">BDT. 150
+                                <td class="text-red">INR. 150
                             </tr>
                         </tbody>
                     </table>

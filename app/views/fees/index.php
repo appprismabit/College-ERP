@@ -180,7 +180,7 @@
                                                 <div class="col-sm-4 invoice-col">
                                                     To
                                                     <address>
-                                                        <strong>Mir Kashem Ali</strong><br>
+                                                        <strong>Imdadul Hoques</strong><br>
                                                         Hatigaon, Guwahati<br>
                                                         Assam, 781038<br>
                                                         Phone: (555) 539-1037<br>
@@ -301,8 +301,8 @@
                                                 <button type="button" class="btn btn-primary generate_pdf" style="margin-right: 5px;">
                                                     <i class="fas fa-download"></i> Generate PDF
                                                 </button>
-                                                <button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Print
-                                                </button>
+                                                <!-- <button type="button" class="btn btn-success float-right"><i class="far fa-credit-card"></i> Print
+                                                </button> -->
                                             </div>
                                         </div>
                                     </div>

@@ -3,7 +3,7 @@
         <div class="card-body">
             <div class="row text-xs">
                 <div class="col-12 col-md-12">
-                    <label class="text-md"><i class="fa fa-search"></i></label>
+                    <!-- <label class="text-md"><i class="fa fa-search"></i></label> -->
                     <div class="float-right">
 
 

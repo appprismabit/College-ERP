@@ -91,7 +91,7 @@
                                         <h3 class="profile-username text-center"></h3>
 
                                         <p class="text-muted text-center">Student</p>
-                                        <p class="text-muted text-center">87812376</p>
+                                   
 
                                         <ul class="list-group list-group-unbordered mb-3">
                                             <li class="list-group-item">
@@ -112,7 +112,6 @@
                                             </li>
                                         </ul>
 
-                                        <a href="#" class="btn btn-primary btn-block"><b>Block</b></a>
                                     </div>
                                     <!-- /.card-body -->
                                 </div>
@@ -223,7 +222,7 @@
                                                                             January
                                                                         </div>
                                                                         <div class="d-flex">
-                                                                            <span class="text-green text-xs m-1">Class Attended: 12</span>
+                                                                            <span class="text-green text-xs m-1">Class Attended: 9</span>
                                                                             <span class="text-red text-xs m-1">Total Classes: 10 </span>
                                                                         </div>
                                                                     </div>
@@ -236,7 +235,7 @@
                                                                             February
                                                                         </div>
                                                                         <div class="d-flex">
-                                                                            <span class="text-green text-xs m-1">Class Attended: 12</span>
+                                                                            <span class="text-green text-xs m-1">Class Attended: 2</span>
                                                                             <span class="text-red text-xs m-1">Total Classes: 10 </span>
                                                                         </div>
                                                                     </div>
@@ -249,7 +248,7 @@
                                                                             March
                                                                         </div>
                                                                         <div class="d-flex">
-                                                                            <span class="text-green text-xs m-1">Class Attended: 12</span>
+                                                                            <span class="text-green text-xs m-1">Class Attended: 6</span>
                                                                             <span class="text-red text-xs m-1">Total Classes: 10 </span>
                                                                         </div>
                                                                     </div>
@@ -262,7 +261,7 @@
                                                                             April
                                                                         </div>
                                                                         <div class="d-flex">
-                                                                            <span class="text-green text-xs m-1">Class Attended: 12</span>
+                                                                            <span class="text-green text-xs m-1">Class Attended: 10</span>
                                                                             <span class="text-red text-xs m-1">Total Classes: 10 </span>
                                                                         </div>
                                                                     </div>
@@ -925,14 +924,14 @@
                     }
 
                     // store the Event Object in the DOM element so we can get to it later
-                    $(this).data('eventObject', eventObject)
+                    // $(this).data('eventObject', eventObject)
 
-                    // make the event draggable using jQuery UI
-                    $(this).draggable({
-                        zIndex: 1070,
-                        revert: true, // will cause the event to go back to its
-                        revertDuration: 0 //  original position after the drag
-                    })
+                    // // make the event draggable using jQuery UI
+                    // $(this).draggable({
+                    //     zIndex: 1070,
+                    //     revert: true, // will cause the event to go back to its
+                    //     revertDuration: 0 //  original position after the drag
+                    // })
 
                 })
             }
